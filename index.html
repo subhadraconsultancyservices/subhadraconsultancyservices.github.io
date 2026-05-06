@@ -2541,46 +2541,302 @@
             <input type="hidden" name="_subject" value="New Business Enquiry - Subhadra Consultancy">
             <input type="hidden" name="_next" value="[subhadraconsultancy.in](https://subhadraconsultancy.in)">
             
-            <div class="form-row">
-              <div class="form-group">
-                <label for="company">Company Name *</label>
-                <input type="text" id="company" name="Company Name" placeholder="Your company name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Work Email *</label>
-                <input type="email" id="email" name="Work Email" placeholder="you@company.com" required>
-              </div>
-            </div>
-            
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone">Mobile Number *</label>
-                <input type="tel" id="phone" name="Mobile Number" placeholder="+91 XXXXXXXXXX" required>
-              </div>
-              <div class="form-group">
-                <label for="requirement">Requirement Type</label>
-                <select id="requirement" name="Requirement">
-                  <option value="">Select requirement type</option>
-                  <option value="Permanent Hiring">Permanent Hiring</option>
-                  <option value="Contract Staffing">Contract Staffing</option>
-                  <option value="Bulk Hiring">Bulk Hiring</option>
-                  <option value="Executive Search">Executive Search</option>
-                  <option value="IT Recruitment">IT Recruitment</option>
-                  <option value="HR Outsourcing">HR Outsourcing</option>
-                </select>
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="details">Tell us about your hiring needs *</label>
-              <textarea id="details" name="Hiring Requirement" placeholder="Number of positions, roles, skills required, timeline..." required></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">
-              <i class="fas fa-paper-plane"></i>
-              Submit Enquiry
-            </button>
-          </form>
+           <!-- =========================================
+     WORKING CONTACT FORM
+========================================= -->
+
+<form 
+  class="contact-form"
+  action="https://formsubmit.co/subhadraconsultancy.services@gmail.com"
+  method="POST"
+>
+
+  <!-- =========================================
+       FORMSUBMIT SETTINGS
+  ========================================= -->
+
+  <!-- Disable Captcha -->
+  <input 
+    type="hidden" 
+    name="_captcha" 
+    value="false"
+  >
+
+  <!-- Email Template -->
+  <input 
+    type="hidden" 
+    name="_template" 
+    value="table"
+  >
+
+  <!-- Email Subject -->
+  <input 
+    type="hidden" 
+    name="_subject" 
+    value="New Business Enquiry - Subhadra Consultancy"
+  >
+
+  <!-- Redirect URL -->
+  <input 
+    type="hidden" 
+    name="_next" 
+    value="https://subhadraconsultancy.in"
+  >
+
+  <!-- =========================================
+       FIRST ROW
+  ========================================= -->
+
+  <div class="form-row">
+
+    <!-- COMPANY NAME -->
+    <div class="form-group">
+
+      <label for="company">
+        Company Name *
+      </label>
+
+      <input
+        type="text"
+        id="company"
+        name="Company Name"
+        placeholder="Your company name"
+        required
+      >
+
+    </div>
+
+    <!-- EMAIL -->
+    <div class="form-group">
+
+      <label for="email">
+        Work Email *
+      </label>
+
+      <input
+        type="email"
+        id="email"
+        name="Work Email"
+        placeholder="you@company.com"
+        required
+      >
+
+    </div>
+
+  </div>
+
+  <!-- =========================================
+       SECOND ROW
+  ========================================= -->
+
+  <div class="form-row">
+
+    <!-- MOBILE -->
+    <div class="form-group">
+
+      <label for="phone">
+        Mobile Number *
+      </label>
+
+      <input
+        type="tel"
+        id="phone"
+        name="Mobile Number"
+        placeholder="+91 XXXXXXXXXX"
+        required
+      >
+
+    </div>
+
+    <!-- REQUIREMENT -->
+    <div class="form-group">
+
+      <label for="requirement">
+        Requirement Type
+      </label>
+
+      <select
+        id="requirement"
+        name="Requirement"
+      >
+
+        <option value="">
+          Select requirement type
+        </option>
+
+        <option value="Permanent Hiring">
+          Permanent Hiring
+        </option>
+
+        <option value="Contract Staffing">
+          Contract Staffing
+        </option>
+
+        <option value="Bulk Hiring">
+          Bulk Hiring
+        </option>
+
+        <option value="Executive Search">
+          Executive Search
+        </option>
+
+        <option value="IT Recruitment">
+          IT Recruitment
+        </option>
+
+        <option value="HR Outsourcing">
+          HR Outsourcing
+        </option>
+
+      </select>
+
+    </div>
+
+  </div>
+
+  <!-- =========================================
+       MESSAGE
+  ========================================= -->
+
+  <div class="form-group">
+
+    <label for="message">
+      Hiring Requirement
+    </label>
+
+    <textarea
+      id="message"
+      name="Hiring Requirement"
+      placeholder="Tell us about your hiring requirements..."
+    ></textarea>
+
+  </div>
+
+  <!-- =========================================
+       SUBMIT BUTTON
+  ========================================= -->
+
+  <button 
+    type="submit"
+    class="submit-btn"
+  >
+
+    <i class="fas fa-paper-plane"></i>
+
+    Submit Enquiry
+
+  </button>
+
+</form>
+
+<!-- =========================================
+     CSS
+========================================= -->
+
+<style>
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.form-group label{
+  font-size:14px;
+  font-weight:600;
+  color:#0f172a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:16px 18px;
+  border:2px solid #e2e8f0;
+  border-radius:16px;
+  font-size:15px;
+  font-family:inherit;
+  background:#ffffff;
+  transition:all .3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
+}
+
+.form-group textarea{
+  min-height:140px;
+  resize:vertical;
+}
+
+.submit-btn{
+  height:58px;
+  border:none;
+  border-radius:18px;
+  background:linear-gradient(135deg,#1e3a8a,#06b6d4);
+  color:#ffffff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  transition:all .3s ease;
+  box-shadow:0 12px 28px rgba(37,99,235,0.2);
+}
+
+.submit-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 18px 35px rgba(37,99,235,0.28);
+}
+
+@media(max-width:768px){
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+
+<!-- =========================================
+     IMPORTANT
+========================================= -->
+
+<!--
+
+1. First time FormSubmit use karte waqt
+   confirmation mail aata hai.
+
+2. Check:
+   - Inbox
+   - Spam
+   - Promotions
+
+3. Confirmation link click karna mandatory hai.
+
+4. Uske baad form mails receive hona start ho jayenge.
+
+-->
+
         </div>
       </div>
     </div>
