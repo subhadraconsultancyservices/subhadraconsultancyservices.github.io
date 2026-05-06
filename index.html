@@ -1,38 +1,240 @@
-<section class="about" id="about">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subhadra Consultancy Services</title>
 
-<div class="container about-grid">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+.logo-text{
+font-family:Georgia,serif;
+font-size:36px;
+font-weight:800;
+letter-spacing:1px;
+color:#001b4d;
+}
+
+.btn-primary{
+font-family:Georgia,serif;
+font-size:16px;
+font-weight:700;
+}
+
+/* EMPLOYER */
+
+.employer-section{
+padding:120px 0;
+background:#ffffff;
+}
+
+.employer-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.employer-grid img{
+width:100%;
+border-radius:20px;
+}
+
+.employer-section span{
+color:#ff7a00;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.employer-section h2{
+font-size:48px;
+margin:20px 0;
+color:#001b4d;
+}
+
+.employer-section p{
+line-height:1.9;
+color:#475569;
+margin-bottom:20px;
+}
+
+.employer-section ul li{
+margin-bottom:15px;
+font-weight:600;
+}
+
+/* JOB ASPIRANTS */
+
+.aspirants-section{
+padding:120px 0;
+background:#f8fafc;
+}
+
+.aspirants-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.aspirants-grid img{
+width:100%;
+border-radius:20px;
+}
+
+.aspirants-section span{
+color:#ff7a00;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.aspirants-section h2{
+font-size:48px;
+margin:20px 0;
+color:#001b4d;
+}
+
+.aspirants-section p{
+line-height:1.9;
+color:#475569;
+margin-bottom:20px;
+}
+
+.aspirants-section ul li{
+margin-bottom:15px;
+font-weight:600;
+}
+
+@media(max-width:900px){
+
+.employer-grid,
+.aspirants-grid{
+grid-template-columns:1fr;
+}
+
+.employer-section h2,
+.aspirants-section h2{
+font-size:36px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="container nav">
+
+<div class="logo-area">
+<h2 class="logo-text">Subhadra Consultancy Services</h2>
+<p>Strategic Workforce Solutions</p>
+</div>
+
+<nav>
+<a href="#">About</a>
+<a href="#">Employer</a>
+<a href="#">Job Aspirants</a>
+</nav>
+
+<a href="#contact" class="btn-primary">
+Business Enquiry
+</a>
+
+</div>
+</header>
+
+<section class="hero">
+<div class="overlay"></div>
+
+<div class="container hero-grid">
+
+<div class="hero-content">
+<span class="hero-badge">Enterprise Recruitment Partner</span>
+
+<h1>
+Strategic Workforce & Recruitment Solutions
+</h1>
+
+<p>
+Subhadra Consultancy Services helps organizations scale efficiently with enterprise hiring solutions, contract staffing, permanent recruitment, and talent acquisition support.
+</p>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn-primary">Talk To Us</a>
+
+<a href="mailto:subhadraconsultancy.services@gmail.com" class="btn-secondary">
+Business Email
+</a>
+</div>
+</div>
+
+<div class="hero-card">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Positions Closed</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Hiring Partners</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Industries Served</p>
+</div>
+
+<div class="stat">
+<h2>95%</h2>
+<p>Client Retention</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="why-us">
+<div class="container why-grid">
 
 <div>
 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop">
 </div>
 
 <div>
-
-<span>ABOUT US</span>
+<span>ABOUT</span>
 
 <h2>
-Trusted Workforce & Staffing Partner
+Trusted Recruitment & Staffing Partner
 </h2>
 
 <p>
-Subhadra Consultancy Services provides strategic recruitment and staffing solutions to organizations across multiple industries with a focus on quality hiring and scalable workforce support.
+We help businesses reduce hiring time, improve candidate quality, and build scalable workforce solutions through strategic recruitment expertise.
 </p>
 
 <ul>
-<li>Permanent Staffing</li>
-<li>Contract Hiring</li>
-<li>Bulk Recruitment</li>
-<li>Executive Search</li>
-<li>Workforce Solutions</li>
+<li>Fast Recruitment Process</li>
+<li>Pre-Screened Candidates</li>
+<li>Dedicated Hiring Support</li>
+<li>Industry-Specific Recruitment</li>
+<li>Scalable Workforce Solutions</li>
 </ul>
 
 </div>
-
 </div>
-
 </section>
 
-<section class="employer-section" id="employer">
+<!-- EMPLOYER SECTION -->
+
+<section class="employer-section">
 
 <div class="container employer-grid">
 
@@ -66,7 +268,9 @@ We support organizations with strategic workforce planning, permanent staffing, 
 
 </section>
 
-<section class="aspirants-section" id="aspirants">
+<!-- JOB ASPIRANTS -->
+
+<section class="aspirants-section">
 
 <div class="container aspirants-grid">
 
@@ -100,23 +304,74 @@ We help professionals explore career opportunities with leading organizations th
 
 </section>
 
-<section class="contact" id="contact">
+<section class="process">
+<div class="container">
 
+<div class="section-title">
+<span>OUR PROCESS</span>
+<h2>Recruitment Workflow</h2>
+</div>
+
+<div class="process-grid">
+
+<div class="step">
+<h3>01</h3>
+<p>Requirement Analysis</p>
+</div>
+
+<div class="step">
+<h3>02</h3>
+<p>Candidate Screening</p>
+</div>
+
+<div class="step">
+<h3>03</h3>
+<p>Interview Coordination</p>
+</div>
+
+<div class="step">
+<h3>04</h3>
+<p>Onboarding Support</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="testimonial">
+<div class="container">
+
+<div class="section-title dark">
+<span>CLIENT FEEDBACK</span>
+<h2>What Companies Say</h2>
+</div>
+
+<div class="testimonial-card">
+<p>
+“Subhadra Consultancy helped us streamline our hiring process with quality candidate screening and fast turnaround time.”
+</p>
+
+<h4>HR Manager — Technology Company</h4>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
 <div class="container contact-grid">
 
-<div>
-
-<h2>
-Business Enquiry
-</h2>
+<div class="contact-left">
+<h2>Business Enquiry</h2>
 
 <p>
 Looking for recruitment or staffing support? Connect with our team today.
 </p>
 
+<div class="contact-info">
 <p>📞 +91 7030604676</p>
 <p>✉ subhadraconsultancy.services@gmail.com</p>
 <p>🌐 subhadraconsultancy.in</p>
+</div>
 
 </div>
 
@@ -130,8 +385,8 @@ Looking for recruitment or staffing support? Connect with our team today.
 
 <select>
 <option>Select Requirement</option>
-<option>Permanent Staffing</option>
-<option>Contract Hiring</option>
+<option>Permanent Hiring</option>
+<option>Contract Staffing</option>
 <option>Bulk Hiring</option>
 <option>Executive Search</option>
 </select>
@@ -145,50 +400,33 @@ Submit Enquiry
 </form>
 
 </div>
-
 </section>
 
 <footer>
-
 <div class="container footer-grid">
 
 <div>
-
 <h3>Subhadra Consultancy Services</h3>
 
 <p>
 Enterprise recruitment and staffing solutions for modern businesses.
 </p>
-
 </div>
 
 <div>
-
-<h4>Solutions</h4>
-
-<p>Permanent Staffing</p>
-<p>Contract Staffing</p>
-<p>Bulk Hiring</p>
-<p>Executive Search</p>
-
-</div>
-
-<div>
-
 <h4>Contact</h4>
-
 <p>+91 7030604676</p>
 <p>subhadraconsultancy.services@gmail.com</p>
-<p>subhadraconsultancy.in</p>
-
 </div>
 
 </div>
-
 </footer>
 
 <a href="https://wa.me/917030604676" class="whatsapp">
 WhatsApp
 </a>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
