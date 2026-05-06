@@ -1,470 +1,988 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <title>Subhadra Consultancy Services | Connecting Talent to Opportunities</title>
-<meta name="description" content="Empowering freshers and job seekers with expert guidance, skill-building, and personalized job placement support.">
+
+<meta name="description"
+content="Empowering freshers and job seekers with expert guidance, interview preparation, resume building, and personalized placement support." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
 <script>
- tailwind.config = {
- theme: {
- extend: {
- colors: {
- primary: {
- 500: '#1e3a8a',
- 600: '#1e40af'
- },
- secondary: {
- 500: '#0284c7',
- 600: '#0ea5e9'
- }
- },
- fontFamily: {
- sans: ['Poppins', 'sans-serif']
- }
- }
- }
- }
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: {
+500: '#1e3a8a',
+600: '#1e40af',
+700: '#172554'
+},
+secondary: {
+500: '#0ea5e9',
+600: '#0284c7'
+}
+},
+fontFamily: {
+sans: ['Poppins', 'sans-serif']
+}
+}
+}
+}
 </script>
 
 <style>
-body {
-font-family: 'Poppins', sans-serif;
-scroll-behavior: smooth;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.hero-gradient {
-background: linear-gradient(-45deg, #1e3a8a, #0284c7, #0ea5e9, #2563eb);
-background-size: 400% 400%;
-animation: gradientBG 12s ease infinite;
+html{
+scroll-behavior:smooth;
 }
 
-@keyframes gradientBG {
-0% { background-position: 0% 50%; }
-50% { background-position: 100% 50%; }
-100% { background-position: 0% 50%; }
+body{
+font-family:'Poppins',sans-serif;
+background:#f8fafc;
+overflow-x:hidden;
 }
 
-.glassmorph {
-background: rgba(255,255,255,0.2);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(255,255,255,0.18);
+/* HERO GRADIENT */
+
+.hero-gradient{
+background:
+linear-gradient(
+135deg,
+#172554 0%,
+#1e3a8a 35%,
+#0284c7 70%,
+#0ea5e9 100%
+);
+
+position:relative;
+overflow:hidden;
 }
 
-.card-hover:hover {
-transform: translateY(-8px);
-box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+.hero-gradient::before{
+content:'';
+position:absolute;
+width:700px;
+height:700px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+top:-250px;
+right:-150px;
 }
 
-.fade-in {
-animation: fadeIn 1s ease;
+.hero-gradient::after{
+content:'';
+position:absolute;
+width:500px;
+height:500px;
+background:rgba(255,255,255,0.05);
+border-radius:50%;
+bottom:-200px;
+left:-150px;
 }
 
-@keyframes fadeIn {
-from {
-opacity: 0;
-transform: translateY(20px);
+/* GLASS */
+
+.glass{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
 }
 
-to {
-opacity: 1;
-transform: translateY(0);
+/* HOVER */
+
+.card-hover{
+transition:all .4s ease;
+}
+
+.card-hover:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ANIMATION */
+
+.fade-up{
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
 }
 }
 
-.scroll-top {
-position: fixed;
-bottom: 25px;
-right: 25px;
-background: #1e40af;
-color: white;
-padding: 14px;
-border-radius: 50%;
-display: none;
-z-index: 999;
+/* SCROLL BUTTON */
+
+.scroll-top{
+position:fixed;
+bottom:25px;
+right:25px;
+width:55px;
+height:55px;
+display:none;
+justify-content:center;
+align-items:center;
+border-radius:999px;
+background:#1e40af;
+color:white;
+z-index:999;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-.scroll-top:hover {
-background: #0ea5e9;
+.scroll-top:hover{
+background:#0284c7;
+transform:translateY(-4px);
 }
+
+/* SERVICE ICON */
+
+.service-icon{
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:20px;
+background:linear-gradient(135deg,#1e40af,#0ea5e9);
+color:white;
+margin-bottom:20px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial-card{
+position:relative;
+overflow:hidden;
+}
+
+.testimonial-card::before{
+content:'';
+position:absolute;
+width:140px;
+height:140px;
+background:rgba(14,165,233,0.06);
+border-radius:50%;
+top:-50px;
+right:-50px;
+}
+
+/* INPUT */
+
+.input-field{
+width:100%;
+padding:16px 18px;
+border-radius:16px;
+outline:none;
+border:none;
+font-size:15px;
+color:#111827;
+}
+
+.input-field:focus{
+box-shadow:0 0 0 3px rgba(14,165,233,0.3);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-title{
+font-size:2.6rem;
+line-height:1.2;
+}
+
+}
+
 </style>
+
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="text-gray-800">
 
-<!-- Navbar -->
-<nav class="fixed top-0 left-0 w-full z-50 glassmorph">
+<!-- NAVBAR -->
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-lg shadow-sm">
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
 <div class="flex justify-between items-center h-20">
 
 <div>
 <h1 class="text-2xl md:text-3xl font-bold text-primary-600">
-Subhadra Consultancy Services
+Subhadra Consultancy
 </h1>
 </div>
 
-<div class="hidden md:flex items-center space-x-6">
-<a href="#home" class="hover:text-primary-600">Home</a>
-<a href="#about" class="hover:text-primary-600">About</a>
-<a href="#services" class="hover:text-primary-600">Services</a>
-<a href="#testimonials" class="hover:text-primary-600">Testimonials</a>
-<a href="#contact" class="bg-primary-600 text-white px-5 py-2 rounded-full hover:bg-secondary-600 transition">
+<div class="hidden md:flex items-center gap-8 text-[15px] font-medium">
+
+<a href="#home" class="hover:text-primary-600 transition">Home</a>
+
+<a href="#about" class="hover:text-primary-600 transition">About</a>
+
+<a href="#services" class="hover:text-primary-600 transition">Services</a>
+
+<a href="#testimonials" class="hover:text-primary-600 transition">Testimonials</a>
+
+<a href="#faq" class="hover:text-primary-600 transition">FAQ</a>
+
+<a href="#contact"
+class="bg-primary-600 text-white px-6 py-3 rounded-full hover:bg-secondary-600 transition">
 Contact
 </a>
+
 </div>
 
-<div class="md:hidden">
-<button id="menu-btn">
+<button id="menu-btn" class="md:hidden">
 <i data-feather="menu"></i>
 </button>
-</div>
-</div>
+
 </div>
 
-<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg px-4 py-4 space-y-3">
-<a href="#home" class="block">Home</a>
-<a href="#about" class="block">About</a>
-<a href="#services" class="block">Services</a>
-<a href="#testimonials" class="block">Testimonials</a>
-<a href="#contact" class="block">Contact</a>
 </div>
+
+<!-- MOBILE MENU -->
+
+<div id="mobile-menu"
+class="hidden md:hidden bg-white shadow-lg px-6 py-5 space-y-4">
+
+<a href="#home" class="block">Home</a>
+
+<a href="#about" class="block">About</a>
+
+<a href="#services" class="block">Services</a>
+
+<a href="#testimonials" class="block">Testimonials</a>
+
+<a href="#faq" class="block">FAQ</a>
+
+<a href="#contact" class="block">Contact</a>
+
+</div>
+
 </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero-gradient text-white pt-32 pb-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid md:grid-cols-2 gap-10 items-center">
+<!-- HERO -->
 
-<div class="fade-in">
-<h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-Connecting Fresh Talent with Career Opportunities
+<section id="home"
+class="hero-gradient text-white pt-36 pb-24">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+<div class="grid md:grid-cols-2 gap-14 items-center">
+
+<!-- LEFT -->
+
+<div class="fade-up">
+
+<div class="glass inline-flex px-5 py-2 rounded-full text-sm mb-7">
+Empowering Fresh Talent & Careers
+</div>
+
+<h1 class="hero-title text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+
+Connecting Fresh Talent With Career Opportunities
+
 </h1>
 
-<p class="text-lg md:text-2xl opacity-90 leading-relaxed mb-8">
-We help fresh graduates and job seekers build successful careers through resume building, interview preparation, career counseling, and job placement support.
+<p class="text-lg md:text-xl opacity-90 leading-8 mb-10">
+
+We help fresh graduates and job seekers build successful careers through resume building, interview preparation, career counseling, and placement support.
+
 </p>
 
-<div class="flex gap-4 flex-wrap">
-<a href="#services" class="bg-white text-primary-600 px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+<div class="flex flex-wrap gap-5">
+
+<a href="#services"
+class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+
 Explore Services
+
 </a>
 
-<a href="#contact" class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition">
+<a href="#contact"
+class="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition">
+
 Contact Us
+
 </a>
-</div>
+
+<a href="https://www.linkedin.com"
+target="_blank"
+class="bg-blue-600 px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+
+LinkedIn
+
+</a>
+
 </div>
 
-<div class="fade-in">
+</div>
+
+<!-- RIGHT -->
+
+<div class="fade-up">
+
 <img
 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
-alt="Career Guidance Team"
-class="rounded-3xl shadow-2xl w-full object-cover">
+alt="Career Guidance"
+class="rounded-[30px] shadow-2xl w-full object-cover">
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-20 bg-white">
+<!-- STATS -->
+
+<section class="bg-white py-14">
+
+<div class="max-w-7xl mx-auto px-4">
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+<div>
+<h3 class="text-4xl font-bold text-primary-600">100+</h3>
+<p class="mt-2 text-gray-600">Candidates Guided</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-primary-600">50+</h3>
+<p class="mt-2 text-gray-600">Placements</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-primary-600">10+</h3>
+<p class="mt-2 text-gray-600">Hiring Partners</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-primary-600">95%</h3>
+<p class="mt-2 text-gray-600">Success Rate</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="py-24 bg-gray-50">
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<div class="text-center mb-14">
-<h2 class="text-4xl font-bold mb-4">About Us</h2>
-<div class="w-24 h-1 bg-primary-600 mx-auto"></div>
+<div class="text-center mb-16">
+
+<h2 class="text-4xl font-bold mb-4">
+About Us
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
 </div>
 
-<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="grid md:grid-cols-2 gap-16 items-center">
 
 <div>
+
 <img
 src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
-alt="Professional Team"
-class="rounded-3xl shadow-2xl">
+alt="Team"
+class="rounded-[30px] shadow-2xl">
+
 </div>
 
 <div>
-<p class="text-lg leading-8 text-gray-600 mb-6">
-At Subhadra Consultancy Services, we are dedicated to helping fresh graduates and early-career professionals secure the right opportunities.
+
+<h3 class="text-3xl font-bold mb-6">
+Helping Freshers Build Strong Careers
+</h3>
+
+<p class="text-lg text-gray-600 leading-8 mb-6">
+
+At Subhadra Consultancy Services, we are committed to guiding fresh graduates and job seekers toward meaningful career opportunities.
+
 </p>
 
-<p class="text-lg leading-8 text-gray-600 mb-8">
-Our mission is to empower candidates with career guidance, interview preparation, and professional support throughout their job search journey.
+<p class="text-lg text-gray-600 leading-8 mb-8">
+
+Our expert guidance, personalized support, interview preparation, and resume optimization help candidates stand out in today's competitive job market.
+
 </p>
 
 <div class="grid grid-cols-2 gap-6">
-<div class="bg-gray-100 rounded-2xl p-6 text-center">
-<h3 class="text-4xl font-bold text-primary-600">50+</h3>
-<p class="mt-2 text-gray-600">Candidates Placed</p>
-</div>
 
-<div class="bg-gray-100 rounded-2xl p-6 text-center">
+<div class="bg-white rounded-3xl p-6 shadow-md text-center">
+
 <h3 class="text-4xl font-bold text-primary-600">5+</h3>
-<p class="mt-2 text-gray-600">Industry Experts</p>
+
+<p class="mt-2 text-gray-600">
+Industry Experts
+</p>
+
 </div>
-</div>
+
+<div class="bg-white rounded-3xl p-6 shadow-md text-center">
+
+<h3 class="text-4xl font-bold text-primary-600">24/7</h3>
+
+<p class="mt-2 text-gray-600">
+Candidate Support
+</p>
+
 </div>
 
 </div>
+
 </div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- Services -->
-<section id="services" class="py-20 bg-gray-50">
+<!-- SERVICES -->
+
+<section id="services" class="py-24 bg-white">
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<div class="text-center mb-14">
-<h2 class="text-4xl font-bold mb-4">Our Services</h2>
-<div class="w-24 h-1 bg-primary-600 mx-auto"></div>
+<div class="text-center mb-16">
+
+<h2 class="text-4xl font-bold mb-4">
+Our Services
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
 </div>
 
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<!-- Card 1 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-lg transition duration-300 card-hover">
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
 <img
 src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-52 object-cover"
+class="w-full h-56 object-cover"
 alt="Resume Building">
 
-<div class="p-6">
-<div class="text-primary-600 mb-4">
-<i data-feather="file-text" class="w-10 h-10"></i>
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="file-text"></i>
 </div>
 
-<h3 class="text-xl font-bold mb-3">Resume Building</h3>
+<h3 class="text-2xl font-bold mb-4">
+Resume Building
+</h3>
+
 <p class="text-gray-600 leading-7">
-Professional resume creation and skill profiling to help candidates stand out.
+ATS-friendly resume creation and professional skill profiling to improve job opportunities.
 </p>
-</div>
+
 </div>
 
-<!-- Card 2 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-lg transition duration-300 card-hover">
+</div>
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
 <img
 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-52 object-cover"
+class="w-full h-56 object-cover"
 alt="Job Search">
 
-<div class="p-6">
-<div class="text-primary-600 mb-4">
-<i data-feather="briefcase" class="w-10 h-10"></i>
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="briefcase"></i>
 </div>
 
-<h3 class="text-xl font-bold mb-3">Job Search Assistance</h3>
+<h3 class="text-2xl font-bold mb-4">
+Job Assistance
+</h3>
+
 <p class="text-gray-600 leading-7">
-Helping freshers find suitable job opportunities matching their skills and goals.
+Helping freshers and professionals discover suitable career opportunities.
 </p>
-</div>
+
 </div>
 
-<!-- Card 3 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-lg transition duration-300 card-hover">
+</div>
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
 <img
 src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-52 object-cover"
-alt="Interview Coaching">
+class="w-full h-56 object-cover"
+alt="Interview">
 
-<div class="p-6">
-<div class="text-primary-600 mb-4">
-<i data-feather="users" class="w-10 h-10"></i>
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="users"></i>
 </div>
 
-<h3 class="text-xl font-bold mb-3">Interview Coaching</h3>
+<h3 class="text-2xl font-bold mb-4">
+Interview Coaching
+</h3>
+
 <p class="text-gray-600 leading-7">
-Mock interviews and communication guidance to boost confidence and success.
+Mock interviews and communication guidance to boost confidence and interview success.
 </p>
-</div>
+
 </div>
 
-<!-- Card 4 -->
-<div class="bg-white rounded-3xl overflow-hidden shadow-lg transition duration-300 card-hover">
+</div>
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
 <img
 src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-52 object-cover"
+class="w-full h-56 object-cover"
 alt="Career Guidance">
 
-<div class="p-6">
-<div class="text-primary-600 mb-4">
-<i data-feather="target" class="w-10 h-10"></i>
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="target"></i>
 </div>
 
-<h3 class="text-xl font-bold mb-3">Career Counseling</h3>
+<h3 class="text-2xl font-bold mb-4">
+Career Counseling
+</h3>
+
 <p class="text-gray-600 leading-7">
-One-on-one sessions helping candidates choose the right career path.
+Personalized career guidance sessions to help candidates choose the right career path.
 </p>
-</div>
+
 </div>
 
 </div>
+
 </div>
+
+</div>
+
 </section>
 
-<!-- Testimonials -->
-<section id="testimonials" class="py-20 bg-white">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- TESTIMONIALS -->
 
-<div class="text-center mb-14">
-<h2 class="text-4xl font-bold mb-4">Success Stories</h2>
-<div class="w-24 h-1 bg-primary-600 mx-auto"></div>
+<section id="testimonials" class="py-24 bg-gray-50">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-16">
+
+<h2 class="text-4xl font-bold mb-4">
+Success Stories
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
 </div>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="bg-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+<!-- TESTIMONIAL -->
+
+<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
+
 <div class="flex items-center gap-4 mb-6">
-<img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-16 h-16 rounded-full">
+
+<img
+src="https://randomuser.me/api/portraits/men/32.jpg"
+class="w-16 h-16 rounded-full">
+
 <div>
-<h4 class="font-bold">Rajesh Mohanty</h4>
+<h4 class="font-bold text-lg">Rajesh Mohanty</h4>
 <p class="text-gray-500">IT Fresher</p>
 </div>
-</div>
-<p class="text-gray-600 italic leading-7">
-“Subhadra Consultancy helped me secure my first IT job with great guidance and interview support.”
-</p>
+
 </div>
 
-<div class="bg-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+<p class="text-gray-600 leading-8 italic">
+
+“Subhadra Consultancy helped me secure my first IT job with excellent interview preparation and guidance.”
+
+</p>
+
+</div>
+
+<!-- TESTIMONIAL -->
+
+<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
+
 <div class="flex items-center gap-4 mb-6">
-<img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-16 h-16 rounded-full">
+
+<img
+src="https://randomuser.me/api/portraits/women/44.jpg"
+class="w-16 h-16 rounded-full">
+
 <div>
-<h4 class="font-bold">Priyanka Das</h4>
+<h4 class="font-bold text-lg">Priyanka Das</h4>
 <p class="text-gray-500">Graduate</p>
 </div>
-</div>
-<p class="text-gray-600 italic leading-7">
-“Excellent support throughout my job search journey. Highly recommended for freshers.”
-</p>
+
 </div>
 
-<div class="bg-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+<p class="text-gray-600 leading-8 italic">
+
+“Excellent support throughout my job search journey. Highly recommended for freshers and graduates.”
+
+</p>
+
+</div>
+
+<!-- TESTIMONIAL -->
+
+<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
+
 <div class="flex items-center gap-4 mb-6">
-<img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-16 h-16 rounded-full">
+
+<img
+src="https://randomuser.me/api/portraits/men/75.jpg"
+class="w-16 h-16 rounded-full">
+
 <div>
-<h4 class="font-bold">Amit Sharma</h4>
+<h4 class="font-bold text-lg">Amit Sharma</h4>
 <p class="text-gray-500">Diploma Holder</p>
 </div>
+
 </div>
-<p class="text-gray-600 italic leading-7">
-“The interview coaching sessions helped me gain confidence and crack interviews successfully.”
+
+<p class="text-gray-600 leading-8 italic">
+
+“The mock interviews and resume support helped me crack interviews confidently.”
+
 </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-20 hero-gradient text-white text-center">
-<div class="max-w-4xl mx-auto px-4">
+<!-- FAQ -->
 
-<h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
-<p class="text-xl opacity-90 mb-10">
+<section id="faq" class="py-24 bg-white">
+
+<div class="max-w-5xl mx-auto px-4">
+
+<div class="text-center mb-16">
+
+<h2 class="text-4xl font-bold mb-4">
+Frequently Asked Questions
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
+</div>
+
+<div class="space-y-6">
+
+<div class="bg-gray-50 p-7 rounded-3xl shadow">
+
+<h3 class="text-xl font-semibold mb-3">
+Do you help freshers get jobs?
+</h3>
+
+<p class="text-gray-600 leading-7">
+Yes, we specialize in helping fresh graduates and entry-level candidates secure job opportunities.
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-7 rounded-3xl shadow">
+
+<h3 class="text-xl font-semibold mb-3">
+Do you provide interview preparation?
+</h3>
+
+<p class="text-gray-600 leading-7">
+Yes, we conduct mock interviews and provide communication training for better interview performance.
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-7 rounded-3xl shadow">
+
+<h3 class="text-xl font-semibold mb-3">
+Do you create professional resumes?
+</h3>
+
+<p class="text-gray-600 leading-7">
+Absolutely. We help candidates create ATS-friendly professional resumes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact"
+class="hero-gradient py-24 text-white">
+
+<div class="max-w-5xl mx-auto px-4 relative z-10">
+
+<div class="text-center mb-14">
+
+<h2 class="text-5xl font-bold mb-6">
+Get In Touch
+</h2>
+
+<p class="text-xl opacity-90">
 Ready to start your career journey? Connect with us today.
 </p>
 
-<div class="flex flex-wrap justify-center gap-5">
+</div>
+
+<form class="grid gap-6">
+
+<input
+type="text"
+placeholder="Your Name"
+class="input-field">
+
+<input
+type="email"
+placeholder="Your Email"
+class="input-field">
+
+<textarea
+rows="6"
+placeholder="Your Message"
+class="input-field"></textarea>
+
+<button
+class="bg-white text-primary-600 py-4 rounded-2xl font-semibold hover:scale-105 transition">
+
+Send Message
+
+</button>
+
+</form>
+
+<div class="flex flex-wrap justify-center gap-5 mt-10">
+
 <a href="mailto:subhadraconsultancy.services@gmail.com"
 class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+
 Email Us
+
 </a>
 
 <a href="https://wa.me/917028374676"
 target="_blank"
 class="bg-green-500 px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+
 WhatsApp
+
 </a>
+
 </div>
 
 </div>
+
 </section>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-12">
+<!-- FOOTER -->
+
+<footer class="bg-gray-950 text-gray-300 py-16">
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<div class="grid md:grid-cols-4 gap-10">
+<div class="grid md:grid-cols-4 gap-12">
+
+<!-- COMPANY -->
 
 <div>
-<h3 class="text-2xl font-bold text-white mb-4">
-Subhadra Consultancy Services
+
+<h3 class="text-3xl font-bold text-white mb-5">
+Subhadra Consultancy
 </h3>
-<p>Pune, Maharashtra</p>
-<p class="mt-2">subhadraconsultancy.services@gmail.com</p>
-<p class="mt-2">+91 7028374676</p>
+
+<p class="leading-8 text-gray-400">
+Helping freshers and professionals build successful careers through guidance, training, and placement support.
+</p>
+
+<p class="mt-5">Pune, Maharashtra</p>
+
+<p class="mt-2">
+subhadraconsultancy.services@gmail.com
+</p>
+
+<p class="mt-2">
++91 7028374676
+</p>
+
 </div>
 
+<!-- LINKS -->
+
 <div>
-<h4 class="text-white font-semibold mb-4">Quick Links</h4>
-<ul class="space-y-2">
+
+<h4 class="text-white font-semibold mb-5 text-lg">
+Quick Links
+</h4>
+
+<ul class="space-y-3">
+
 <li><a href="#home" class="hover:text-white">Home</a></li>
+
 <li><a href="#about" class="hover:text-white">About</a></li>
+
 <li><a href="#services" class="hover:text-white">Services</a></li>
+
 <li><a href="#contact" class="hover:text-white">Contact</a></li>
+
 </ul>
+
 </div>
 
+<!-- SERVICES -->
+
 <div>
-<h4 class="text-white font-semibold mb-4">Services</h4>
-<ul class="space-y-2">
+
+<h4 class="text-white font-semibold mb-5 text-lg">
+Services
+</h4>
+
+<ul class="space-y-3">
+
 <li>Resume Building</li>
+
 <li>Interview Coaching</li>
+
 <li>Career Counseling</li>
+
 <li>Job Assistance</li>
+
 </ul>
+
 </div>
+
+<!-- SOCIAL -->
 
 <div>
-<h4 class="text-white font-semibold mb-4">Follow Us</h4>
-<div class="flex space-x-4">
-<a href="https://www.linkedin.com" target="_blank">
+
+<h4 class="text-white font-semibold mb-5 text-lg">
+Follow Us
+</h4>
+
+<div class="flex gap-5">
+
+<a href="https://www.linkedin.com"
+target="_blank"
+class="hover:text-white transition">
+
 <i data-feather="linkedin"></i>
+
 </a>
 
- <a href="https://www.Instagram.com" target="_blank">
-<i data-feather="Instagram"></i>
+<a href="https://www.instagram.com"
+target="_blank"
+class="hover:text-white transition">
+
+<i data-feather="instagram"></i>
+
 </a>
- 
-</div>
-</div>
 
-</div>
-
-<div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm">
- Subhadra Consultancy Services | Empowering Careers & Fresh Talent
-</div>
-
-</div>
-</footer>
-
-<!-- WhatsApp Floating Button -->
 <a href="https://wa.me/917028374676"
 target="_blank"
-class="fixed bottom-6 left-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:scale-110 transition">
+class="hover:text-white transition">
+
 <i data-feather="message-circle"></i>
+
 </a>
 
-<!-- Scroll Top -->
+</div>
+
+</div>
+
+</div>
+
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+
+© 2026 Subhadra Consultancy Services. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+
+<a href="https://wa.me/917028374676"
+target="_blank"
+class="fixed bottom-6 left-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition">
+
+<i data-feather="message-circle"></i>
+
+</a>
+
+<!-- SCROLL TOP -->
+
 <button id="scrollBtn" class="scroll-top">
+
 <i data-feather="arrow-up"></i>
+
 </button>
 
+<!-- SCRIPT -->
+
 <script>
-// Feather Icons
+
+/* ICONS */
+
 feather.replace();
 
-// Mobile Menu
+/* MOBILE MENU */
+
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -472,43 +990,57 @@ menuBtn.addEventListener('click', () => {
 mobileMenu.classList.toggle('hidden');
 });
 
-// Scroll Top Button
+/* SCROLL BUTTON */
+
 const scrollBtn = document.getElementById('scrollBtn');
 
 window.addEventListener('scroll', () => {
+
 if(window.scrollY > 300){
-scrollBtn.style.display = 'block';
+scrollBtn.style.display = 'flex';
 }else{
 scrollBtn.style.display = 'none';
 }
+
 });
+
+/* SCROLL TOP */
 
 scrollBtn.addEventListener('click', () => {
+
 window.scrollTo({
- top: 0,
- behavior: 'smooth'
-});
+top:0,
+behavior:'smooth'
 });
 
-// Smooth Scroll
-const links = document.querySelectorAll('a[href^="#"]');
+});
 
-links.forEach(link => {
-link.addEventListener('click', function(e){
+/* SMOOTH SCROLL */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.addEventListener('click', function (e) {
+
 e.preventDefault();
 
 const target = document.querySelector(this.getAttribute('href'));
 
 if(target){
+
 window.scrollTo({
- top: target.offsetTop - 70,
- behavior: 'smooth'
+top:target.offsetTop - 70,
+behavior:'smooth'
 });
+
 }
+
+mobileMenu.classList.add('hidden');
+
 });
+
 });
+
 </script>
 
 </body>
 </html>
-```
