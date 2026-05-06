@@ -786,58 +786,38 @@ action="https://formsubmit.co/subhadraconsultancy.services@gmail.com"
 method="POST"
 >
 
-<!-- Hidden Settings -->
+<input type="hidden" name="_captcha" value="false">
 
-<input 
-type="hidden" 
-name="_captcha" 
-value="false"
->
+<input type="hidden" name="_template" value="table">
 
-<input 
-type="hidden" 
-name="_subject" 
-value="New Business Enquiry"
->
+<input type="hidden" name="_subject" value="New Business Enquiry - Subhadra Consultancy">
 
-<input 
-type="hidden" 
-name="_next" 
-value="https://subhadraconsultancy.in"
->
-
-<!-- Company Name -->
+<input type="hidden" name="_next" value="https://subhadraconsultancy.in">
 
 <input 
 type="text" 
-name="company" 
-placeholder="Company Name" 
+name="Company Name" 
+placeholder="Company Name"
 required
 >
-
-<!-- Work Email -->
 
 <input 
 type="email" 
-name="email" 
-placeholder="Work Email" 
+name="Work Email" 
+placeholder="Work Email"
 required
 >
-
-<!-- Mobile -->
 
 <input 
 type="text" 
-name="mobile" 
-placeholder="Mobile Number" 
+name="Mobile Number" 
+placeholder="Mobile Number"
 required
 >
 
-<!-- Requirement -->
+<select name="Requirement">
 
-<select name="requirement">
-
-<option>
+<option value="">
 Select Requirement
 </option>
 
@@ -859,14 +839,11 @@ Executive Search
 
 </select>
 
-<!-- Message -->
-
 <textarea 
-name="message" 
+name="Hiring Requirement"
 placeholder="Tell us about your hiring requirement"
+required
 ></textarea>
-
-<!-- Button -->
 
 <button type="submit">
 Submit Enquiry
