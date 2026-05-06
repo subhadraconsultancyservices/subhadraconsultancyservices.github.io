@@ -2545,189 +2545,333 @@
      WORKING CONTACT FORM
 ========================================= -->
 
-<form 
-  class="contact-form"
-  action="https://formsubmit.co/subhadraconsultancy.services@gmail.com"
-  method="POST"
->
+<!-- =========================================
+     FONT AWESOME
+========================================= -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- =========================================
+     CONTACT FORM WRAPPER
+========================================= -->
+
+<div class="contact-form-wrapper">
 
   <!-- =========================================
-       FORMSUBMIT SETTINGS
+       WORKING CONTACT FORM
   ========================================= -->
 
-  <!-- Disable Captcha -->
-  <input 
-    type="hidden" 
-    name="_captcha" 
-    value="false"
+  <form
+    action="https://formsubmit.co/subhadraconsultancy.services@gmail.com"
+    method="POST"
+    class="contact-form"
   >
 
-  <!-- Email Template -->
-  <input 
-    type="hidden" 
-    name="_template" 
-    value="table"
-  >
+    <!-- =========================================
+         FORMSUBMIT SETTINGS
+    ========================================= -->
 
-  <!-- Email Subject -->
-  <input 
-    type="hidden" 
-    name="_subject" 
-    value="New Business Enquiry - Subhadra Consultancy"
-  >
+    <!-- Disable Captcha -->
+    <input 
+      type="hidden" 
+      name="_captcha" 
+      value="false"
+    >
 
-  <!-- Redirect URL -->
-  <input 
-    type="hidden" 
-    name="_next" 
-    value="https://subhadraconsultancy.in"
-  >
+    <!-- Disable Auto Reply -->
+    <input 
+      type="hidden" 
+      name="_autoresponse" 
+      value="Thank you for contacting Subhadra Consultancy Services. Our team will connect with you shortly."
+    >
 
-  <!-- =========================================
-       FIRST ROW
-  ========================================= -->
+    <!-- Email Subject -->
+    <input 
+      type="hidden" 
+      name="_subject" 
+      value="New Business Enquiry - Subhadra Consultancy"
+    >
 
-  <div class="form-row">
+    <!-- Table Template -->
+    <input 
+      type="hidden" 
+      name="_template" 
+      value="table"
+    >
 
-    <!-- COMPANY NAME -->
+    <!-- =========================================
+         FIRST ROW
+    ========================================= -->
+
+    <div class="form-row">
+
+      <!-- COMPANY -->
+      <div class="form-group">
+
+        <label for="company">
+          Company Name *
+        </label>
+
+        <input
+          type="text"
+          id="company"
+          name="Company Name"
+          placeholder="Your company name"
+          required
+        >
+
+      </div>
+
+      <!-- EMAIL -->
+      <div class="form-group">
+
+        <label for="email">
+          Work Email *
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="Work Email"
+          placeholder="you@company.com"
+          required
+        >
+
+      </div>
+
+    </div>
+
+    <!-- =========================================
+         SECOND ROW
+    ========================================= -->
+
+    <div class="form-row">
+
+      <!-- MOBILE -->
+      <div class="form-group">
+
+        <label for="phone">
+          Mobile Number *
+        </label>
+
+        <input
+          type="tel"
+          id="phone"
+          name="Mobile Number"
+          placeholder="+91 XXXXXXXXXX"
+          required
+        >
+
+      </div>
+
+      <!-- REQUIREMENT -->
+      <div class="form-group">
+
+        <label for="requirement">
+          Requirement Type
+        </label>
+
+        <select
+          id="requirement"
+          name="Requirement"
+        >
+
+          <option value="">
+            Select requirement type
+          </option>
+
+          <option value="Permanent Hiring">
+            Permanent Hiring
+          </option>
+
+          <option value="Contract Staffing">
+            Contract Staffing
+          </option>
+
+          <option value="Bulk Hiring">
+            Bulk Hiring
+          </option>
+
+          <option value="Executive Search">
+            Executive Search
+          </option>
+
+          <option value="IT Recruitment">
+            IT Recruitment
+          </option>
+
+          <option value="HR Outsourcing">
+            HR Outsourcing
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+    <!-- =========================================
+         MESSAGE
+    ========================================= -->
+
     <div class="form-group">
 
-      <label for="company">
-        Company Name *
+      <label for="message">
+        Hiring Requirement
       </label>
 
-      <input
-        type="text"
-        id="company"
-        name="Company Name"
-        placeholder="Your company name"
+      <textarea
+        id="message"
+        name="Hiring Requirement"
+        placeholder="Tell us about your hiring requirements..."
         required
-      >
+      ></textarea>
 
     </div>
 
-    <!-- EMAIL -->
-    <div class="form-group">
+    <!-- =========================================
+         SUBMIT BUTTON
+    ========================================= -->
 
-      <label for="email">
-        Work Email *
-      </label>
+    <button 
+      type="submit"
+      class="submit-btn"
+    >
 
-      <input
-        type="email"
-        id="email"
-        name="Work Email"
-        placeholder="you@company.com"
-        required
-      >
+      <i class="fas fa-paper-plane"></i>
 
-    </div>
+      Submit Enquiry
 
-  </div>
+    </button>
 
-  <!-- =========================================
-       SECOND ROW
-  ========================================= -->
+  </form>
 
-  <div class="form-row">
+</div>
 
-    <!-- MOBILE -->
-    <div class="form-group">
+<!-- =========================================
+     CSS
+========================================= -->
 
-      <label for="phone">
-        Mobile Number *
-      </label>
+<style>
 
-      <input
-        type="tel"
-        id="phone"
-        name="Mobile Number"
-        placeholder="+91 XXXXXXXXXX"
-        required
-      >
+.contact-form-wrapper{
+  background:#ffffff;
+  border-radius:32px;
+  padding:45px;
+  box-shadow:0 15px 45px rgba(0,0,0,0.06);
+  border:1px solid #e2e8f0;
+}
 
-    </div>
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
 
-    <!-- REQUIREMENT -->
-    <div class="form-group">
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
 
-      <label for="requirement">
-        Requirement Type
-      </label>
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
 
-      <select
-        id="requirement"
-        name="Requirement"
-      >
+.form-group label{
+  font-size:14px;
+  font-weight:600;
+  color:#0f172a;
+}
 
-        <option value="">
-          Select requirement type
-        </option>
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:16px 18px;
+  border:2px solid #e2e8f0;
+  border-radius:16px;
+  background:#ffffff;
+  font-size:15px;
+  font-family:inherit;
+  transition:all .3s ease;
+}
 
-        <option value="Permanent Hiring">
-          Permanent Hiring
-        </option>
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
+}
 
-        <option value="Contract Staffing">
-          Contract Staffing
-        </option>
+.form-group textarea{
+  min-height:140px;
+  resize:vertical;
+}
 
-        <option value="Bulk Hiring">
-          Bulk Hiring
-        </option>
+.submit-btn{
+  height:60px;
+  border:none;
+  border-radius:18px;
+  background:linear-gradient(135deg,#1e3a8a,#06b6d4);
+  color:#ffffff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  transition:all .3s ease;
+  box-shadow:0 14px 35px rgba(37,99,235,0.22);
+}
 
-        <option value="Executive Search">
-          Executive Search
-        </option>
+.submit-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 40px rgba(37,99,235,0.3);
+}
 
-        <option value="IT Recruitment">
-          IT Recruitment
-        </option>
+@media(max-width:768px){
 
-        <option value="HR Outsourcing">
-          HR Outsourcing
-        </option>
+  .contact-form-wrapper{
+    padding:30px;
+  }
 
-      </select>
+  .form-row{
+    grid-template-columns:1fr;
+  }
 
-    </div>
+}
 
-  </div>
+</style>
 
-  <!-- =========================================
-       MESSAGE
-  ========================================= -->
+<!-- =========================================
+     IMPORTANT
+========================================= -->
 
-  <div class="form-group">
+<!--
 
-    <label for="message">
-      Hiring Requirement
-    </label>
+1. Deploy website on:
+   - Netlify
+   - Vercel
+   - GitHub Pages
 
-    <textarea
-      id="message"
-      name="Hiring Requirement"
-      placeholder="Tell us about your hiring requirements..."
-    ></textarea>
+2. First submit pe FormSubmit verification mail aayega.
 
-  </div>
+3. Check:
+   - Inbox
+   - Spam
+   - Promotions
 
-  <!-- =========================================
-       SUBMIT BUTTON
-  ========================================= -->
+4. Verification link click karna compulsory hai.
 
-  <button 
-    type="submit"
-    class="submit-btn"
-  >
+5. After verification:
+   mails properly receive honge.
 
-    <i class="fas fa-paper-plane"></i>
+-->
 
-    Submit Enquiry
-
-  </button>
-
-</form>
 
 <!-- =========================================
      CSS
