@@ -1,1072 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Subhadra Consultancy Services | Connecting Talent to Opportunities</title>
-
-<meta name="description"
-content="Empowering freshers, experienced professionals, and job seekers with expert guidance, interview preparation, resume building, and personalized placement support." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subhadra Consultancy Services</title>
+<link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-
-<script>
-tailwind.config = {
-theme: {
-extend: {
-colors: {
-primary: {
-500: '#1e3a8a',
-600: '#1e40af',
-700: '#172554'
-},
-secondary: {
-500: '#0ea5e9',
-600: '#0284c7'
-}
-},
-fontFamily: {
-sans: ['Poppins', 'sans-serif']
-}
-}
-}
-}
-</script>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#f8fafc;
-overflow-x:hidden;
-}
-
-.hero-gradient{
-background:
-linear-gradient(
-135deg,
-#172554 0%,
-#1e3a8a 35%,
-#0284c7 70%,
-#0ea5e9 100%
-);
-background-size:400% 400%;
-animation:gradientMove 12s ease infinite;
-position:relative;
-overflow:hidden;
-}
-
-@keyframes gradientMove{
-0%{
-background-position:0% 50%;
-}
-50%{
-background-position:100% 50%;
-}
-100%{
-background-position:0% 50%;
-}
-}
-
-.hero-gradient::before{
-content:'';
-position:absolute;
-width:700px;
-height:700px;
-background:rgba(255,255,255,0.08);
-border-radius:50%;
-top:-250px;
-right:-150px;
-}
-
-.hero-gradient::after{
-content:'';
-position:absolute;
-width:500px;
-height:500px;
-background:rgba(255,255,255,0.05);
-border-radius:50%;
-bottom:-200px;
-left:-150px;
-}
-
-.glass{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(12px);
--webkit-backdrop-filter:blur(12px);
-border:1px solid rgba(255,255,255,0.2);
-}
-
-.card-hover{
-transition:all .4s ease;
-}
-
-.card-hover:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-
-.fade-up{
-animation:fadeUp 1s ease;
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-button,
-a{
-transition:all .3s ease;
-}
-
-.scroll-top{
-position:fixed;
-bottom:25px;
-right:25px;
-width:55px;
-height:55px;
-display:none;
-justify-content:center;
-align-items:center;
-border-radius:999px;
-background:#1e40af;
-color:white;
-z-index:999;
-cursor:pointer;
-transition:0.3s;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.scroll-top:hover{
-background:#0284c7;
-transform:translateY(-4px);
-}
-
-.service-icon{
-width:70px;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:20px;
-background:linear-gradient(135deg,#1e40af,#0ea5e9);
-color:white;
-margin-bottom:20px;
-}
-
-.input-field{
-width:100%;
-padding:16px 18px;
-border-radius:16px;
-outline:none;
-border:none;
-font-size:15px;
-color:#111827;
-}
-
-.input-field:focus{
-box-shadow:0 0 0 3px rgba(14,165,233,0.3);
-}
-
-@media(max-width:768px){
-
-.hero-title{
-font-size:2.8rem;
-line-height:1.2;
-}
-
-}
-
-</style>
-
 </head>
+<body>
 
-<body class="text-gray-800">
+<header class="navbar">
+  <div class="container nav-wrapper">
+    <div>
+      <h2 class="logo">Subhadra Consultancy</h2>
+      <p class="tagline">Connecting Talent to Opportunities</p>
+    </div>
 
-<section id="home"
-class="hero-gradient text-white pt-36 pb-24">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <a href="tel:7030604676" class="btn-primary">Call Now</a>
+  </div>
+</header>
 
-<div class="grid md:grid-cols-2 gap-14 items-center">
+<section class="hero" id="home">
+  <div class="overlay"></div>
 
-<div class="fade-up">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span class="badge">Trusted Recruitment Partner</span>
 
-<div class="glass inline-flex px-5 py-2 rounded-full text-sm mb-7">
-Empowering Fresh & Experienced Talent Careers
-</div>
+      <h1>
+        Empowering Careers.
+        <span>Building Futures.</span>
+      </h1>
 
-<h1 class="hero-title text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+      <p>
+        Subhadra Consultancy Services helps freshers and experienced professionals secure the right opportunities through expert career guidance and recruitment support.
+      </p>
 
-Connecting Fresh & Experienced Talent With Career Opportunities
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Get Started</a>
+        <a href="mailto:subhadraconsultancy.services@gmail.com" class="btn-secondary">Send Resume</a>
+      </div>
+    </div>
 
-</h1>
+    <div class="stats-card">
+      <div class="stat-box">
+        <h2>500+</h2>
+        <p>Candidates Guided</p>
+      </div>
 
-<p class="text-lg md:text-xl opacity-90 leading-8 mb-10">
+      <div class="stat-box">
+        <h2>100+</h2>
+        <p>Interview Preparations</p>
+      </div>
 
-We help freshers, experienced professionals, and job seekers build successful careers through resume building, interview preparation, career counseling, and placement support.
+      <div class="stat-box">
+        <h2>24/7</h2>
+        <p>Candidate Support</p>
+      </div>
 
-</p>
-
-<div class="flex flex-wrap gap-5">
-
-<a href="#services"
-class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105">
-
-Explore Services
-
-</a>
-
-<a href="#contact"
-class="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600">
-
-Contact Us
-
-</a>
-
-</div>
-
-</div>
-
-<div class="fade-up">
-
-<img
-src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
-alt="Career Guidance"
-class="rounded-[30px] shadow-2xl w-full object-cover">
-
-</div>
-
-</div>
-
-</div>
-
+      <div class="stat-box">
+        <h2>Fast</h2>
+        <p>Hiring Support</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="about" class="py-24 bg-gray-50">
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title">
+      <span>OUR SERVICES</span>
+      <h2>Professional Recruitment Solutions</h2>
+    </div>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="cards">
+      <div class="card">
+        <h3>Resume Building</h3>
+        <p>Professional resume enhancement to increase interview opportunities.</p>
+      </div>
 
-<div class="text-center mb-16">
-  
-<h2 class="text-4xl font-bold mb-4">
-About Us
-</h2>
+      <div class="card">
+        <h3>Interview Preparation</h3>
+        <p>Mock interviews and HR guidance for better confidence.</p>
+      </div>
 
-<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+      <div class="card">
+        <h3>Fresher Hiring</h3>
+        <p>Helping companies recruit talented fresh graduates efficiently.</p>
+      </div>
 
-</div>
-
-<div class="grid md:grid-cols-2 gap-16 items-center">
-
-<div>
-
-<img
-src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
-alt="Team"
-class="rounded-[30px] shadow-2xl">
-
-</div>
-
-<div>
-
-<h3 class="text-3xl font-bold mb-6">
-Helping Freshers Build Strong Careers
-</h3>
-
-<p class="text-lg text-gray-600 leading-8 mb-6">
-
-At Subhadra Consultancy Services, we are committed to guiding fresh graduates and job seekers toward meaningful career opportunities.
-
-</p>
-
-<p class="text-lg text-gray-600 leading-8 mb-8">
-
-Our expert guidance, personalized support, interview preparation, and resume optimization help candidates stand out in today's competitive job market.
-
-</p>
-
-<div class="grid grid-cols-2 gap-6">
-
-<div class="bg-white rounded-3xl p-6 shadow-md text-center">
-
-<h3 class="text-4xl font-bold text-primary-600">5+</h3>
-
-<p class="mt-2 text-gray-600">
-Industry Experts
-</p>
-
-</div>
-
-<div class="bg-white rounded-3xl p-6 shadow-md text-center">
-
-<h3 class="text-4xl font-bold text-primary-600">24/7</h3>
-
-<p class="mt-2 text-gray-600">
-Candidate Support
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+      <div class="card">
+        <h3>Experienced Hiring</h3>
+        <p>Connecting skilled professionals with the right organizations.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- HOT JOBS -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="About">
+    </div>
 
-<section id="hot-jobs" class="py-20 bg-white">
+    <div>
+      <span>ABOUT US</span>
+      <h2>Your Trusted Recruitment Partner</h2>
 
-<div class="max-w-7xl mx-auto px-6">
+      <p>
+        At Subhadra Consultancy Services, we help fresh graduates and experienced professionals connect with the right opportunities through expert recruitment guidance and placement support.
+      </p>
 
-<div class="text-center mb-14">
-
-<h2 class="text-4xl font-bold text-gray-800 mb-4">
-Current Hot Jobs
-</h2>
-
-<p class="text-gray-600 text-lg max-w-2xl mx-auto">
-Discover the latest fresher and experienced job opportunities from top companies.
-</p>
-
-</div>
-
-<div class="bg-gray-50 rounded-3xl shadow-xl overflow-hidden">
-
-<div class="grid lg:grid-cols-2 items-center">
-
-<div class="p-10 lg:p-14">
-
-<span class="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-Updated Daily
-</span>
-
-<h3 class="text-4xl font-bold text-gray-800 leading-tight mb-6">
-Explore Latest Job Openings Across India
-</h3>
-
-<p class="text-gray-600 text-lg mb-8 leading-relaxed">
-Find fresher and experienced opportunities from companies like Infosys, TCS, Accenture, Wipro, Capgemini and many more.
-</p>
-
-<a 
-href="hot-job.html"
-class="inline-flex items-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 shadow-xl"
->
-
-View All Hot Jobs
-
-<i data-feather="arrow-right"></i>
-
-</a>
-
-</div>
-
-<div>
-
-<img
-src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop"
-alt="Hot Jobs"
-class="w-full h-full object-cover"
->
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+      <ul>
+        <li>Professional Career Guidance</li>
+        <li>Interview Preparation</li>
+        <li>Candidate Screening</li>
+        <li>Bulk Hiring Support</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<!-- JOB CATEGORIES -->
+<section class="cta">
+  <div class="container">
+    <h2>Looking for the Right Opportunity?</h2>
+    <p>We help freshers and professionals connect with the right companies.</p>
 
-<section class="py-24 bg-gray-50">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="text-center mb-16">
-
-<h2 class="text-4xl font-bold mb-4">
-Popular Job Categories
-</h2>
-
-<p class="text-gray-600">
-Explore opportunities based on your interests
-</p>
-
-</div>
-
-<div class="grid md:grid-cols-4 gap-8">
-
-<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
-
-<i data-feather="monitor" class="text-blue-600 w-12 h-12 mb-5"></i>
-
-<h3 class="font-bold text-2xl mb-3">IT Jobs</h3>
-
-<p class="text-gray-600">
-Software, Cloud, DevOps & Support roles
-</p>
-
-</div>
-
-<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
-
-<i data-feather="headphones" class="text-blue-600 w-12 h-12 mb-5"></i>
-
-<h3 class="font-bold text-2xl mb-3">BPO Jobs</h3>
-
-<p class="text-gray-600">
-Customer support and voice process roles
-</p>
-
-</div>
-
-<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
-
-<i data-feather="briefcase" class="text-blue-600 w-12 h-12 mb-5"></i>
-
-<h3 class="font-bold text-2xl mb-3">Internships</h3>
-
-<p class="text-gray-600">
-Freshers internship opportunities
-</p>
-
-</div>
-
-<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
-
-<i data-feather="settings" class="text-blue-600 w-12 h-12 mb-5"></i>
-
-<h3 class="font-bold text-2xl mb-3">Engineering</h3>
-
-<p class="text-gray-600">
-Mechanical, Civil & Core engineering jobs
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+    <a href="#contact" class="btn-light">Contact Us</a>
+  </div>
 </section>
 
-<!-- SERVICES -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
 
-<section id="services" class="py-24 bg-white">
+    <div>
+      <span>CONTACT US</span>
+      <h2>Let's Connect</h2>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="contact-box">
+        <h4>Email</h4>
+        <p>subhadraconsultancy.services@gmail.com</p>
+      </div>
 
-<div class="text-center mb-16">
+      <div class="contact-box">
+        <h4>Phone</h4>
+        <p>+91 7030604676</p>
+      </div>
 
-<h2 class="text-4xl font-bold mb-4">
-Our Services
-</h2>
+      <div class="contact-box">
+        <h4>Website</h4>
+        <p>subhadraconsultancy.in</p>
+      </div>
+    </div>
 
-<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
 
-</div>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-<!-- CARD -->
-
-<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
-
-<img
-src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-56 object-cover"
-alt="Resume Building">
-
-<div class="p-7">
-
-<div class="service-icon">
-<i data-feather="file-text"></i>
-</div>
-
-<h3 class="text-2xl font-bold mb-4">
-Resume Building
-</h3>
-
-<p class="text-gray-600 leading-7">
-ATS-friendly resume creation and professional skill profiling.
-</p>
-
-</div>
-
-</div>
-
-<!-- CARD -->
-
-<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
-
-<img
-src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-56 object-cover"
-alt="Job Assistance">
-
-<div class="p-7">
-
-<div class="service-icon">
-<i data-feather="briefcase"></i>
-</div>
-
-<h3 class="text-2xl font-bold mb-4">
-Job Assistance
-</h3>
-
-<p class="text-gray-600 leading-7">
-Helping freshers discover suitable career opportunities.
-</p>
-
-</div>
-
-</div>
-
-<!-- CARD -->
-
-<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
-
-<img
-src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-56 object-cover"
-alt="Interview Coaching">
-
-<div class="p-7">
-
-<div class="service-icon">
-<i data-feather="users"></i>
-</div>
-
-<h3 class="text-2xl font-bold mb-4">
-Interview Coaching
-</h3>
-
-<p class="text-gray-600 leading-7">
-Mock interviews and communication guidance to boost confidence.
-</p>
-
-</div>
-
-</div>
-
-<!-- CARD -->
-
-<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
-
-<img
-src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop"
-class="w-full h-56 object-cover"
-alt="Career Counseling">
-
-<div class="p-7">
-
-<div class="service-icon">
-<i data-feather="target"></i>
-</div>
-
-<h3 class="text-2xl font-bold mb-4">
-Career Counseling
-</h3>
-
-<p class="text-gray-600 leading-7">
-Personalized career guidance sessions for candidates.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<!-- TESTIMONIALS -->
-
-<section id="testimonials" class="py-24 bg-gray-50">
-
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-<div class="text-center mb-16">
-
-<h2 class="text-4xl font-bold mb-4">
-Success Stories
-</h2>
-
-<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
-
-</div>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
-
-<div class="flex items-center gap-4 mb-6">
-
-<img
-src="https://randomuser.me/api/portraits/men/32.jpg"
-class="w-16 h-16 rounded-full">
-
-<div>
-<h4 class="font-bold text-lg">Rajesh Mohanty</h4>
-<p class="text-gray-500">IT Fresher</p>
-</div>
-
-</div>
-
-<p class="text-gray-600 leading-8 italic">
-“Subhadra Consultancy helped me secure my first IT job.”
-</p>
-
-</div>
-
-<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
-
-<div class="flex items-center gap-4 mb-6">
-
-<img
-src="https://randomuser.me/api/portraits/women/44.jpg"
-class="w-16 h-16 rounded-full">
-
-<div>
-<h4 class="font-bold text-lg">Priyanka Das</h4>
-<p class="text-gray-500">Graduate</p>
-</div>
-
-</div>
-
-<p class="text-gray-600 leading-8 italic">
-“Excellent support throughout my job search journey.”
-</p>
-
-</div>
-
-<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
-
-<div class="flex items-center gap-4 mb-6">
-
-<img
-src="https://randomuser.me/api/portraits/men/75.jpg"
-class="w-16 h-16 rounded-full">
-
-<div>
-<h4 class="font-bold text-lg">Amit Sharma</h4>
-<p class="text-gray-500">Diploma Holder</p>
-</div>
-
-</div>
-
-<p class="text-gray-600 leading-8 italic">
-“The mock interviews helped me crack interviews confidently.”
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FAQ -->
-
-<section id="faq" class="py-24 bg-white">
-
-<div class="max-w-5xl mx-auto px-4">
-
-<div class="text-center mb-16">
-
-<h2 class="text-4xl font-bold mb-4">
-Frequently Asked Questions
-</h2>
-
-<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
-
-</div>
-
-<div class="space-y-6">
-
-<div class="bg-gray-50 p-7 rounded-3xl shadow">
-
-<h3 class="text-xl font-semibold mb-3">
-Do you help freshers get jobs?
-</h3>
-
-<p class="text-gray-600 leading-7">
-Yes, we specialize in helping fresh graduates secure opportunities.
-</p>
-
-</div>
-
-<div class="bg-gray-50 p-7 rounded-3xl shadow">
-
-<h3 class="text-xl font-semibold mb-3">
-Do you provide interview preparation?
-</h3>
-
-<p class="text-gray-600 leading-7">
-Yes, we conduct mock interviews and communication training.
-</p>
-
-</div>
-
-<div class="bg-gray-50 p-7 rounded-3xl shadow">
-
-<h3 class="text-xl font-semibold mb-3">
-Do you create professional resumes?
-</h3>
-
-<p class="text-gray-600 leading-7">
-Absolutely. We help candidates create ATS-friendly resumes.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="py-24 bg-gray-50">
-
-<div class="max-w-5xl mx-auto px-6">
-
-<div class="text-center mb-14">
-
-<h2 class="text-4xl font-bold mb-4">
-Contact Us
-</h2>
-
-<p class="text-gray-600">
-Get in touch for career guidance and job opportunities
-</p>
-
-</div>
-
-<form 
-action="https://formsubmit.co/subhadraconsultancy.services@gmail.com" 
-method="POST"
-class="grid gap-6">
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Inquiry - Subhadra Consultancy Services">
-<input type="hidden" name="_template" value="table">
-
-<input
-type="text"
-name="name"
-placeholder="Your Name"
-required
-class="input-field bg-white border border-gray-300">
-
-<input
-type="email"
-name="email"
-placeholder="Your Email"
-required
-class="input-field bg-white border border-gray-300">
-
-<input
-type="tel"
-name="phone"
-placeholder="Your Mobile Number"
-required
-class="input-field bg-white border border-gray-300">
-
-<textarea
-rows="6"
-name="message"
-placeholder="Tell us about your requirement..."
-required
-class="input-field bg-white border border-gray-300"></textarea>
-
-<button
-type="submit"
-class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-4 rounded-2xl font-semibold hover:scale-105 shadow-lg">
-
-Send Message
-
-</button>
-
-</form>
-
-<div class="flex flex-wrap justify-center gap-5 mt-10">
-
-<a href="mailto:subhadraconsultancy.services@gmail.com"
-class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105 shadow">
-
-Email Us
-
-</a>
-
-<a href="https://wa.me/917028374676"
-target="_blank"
-class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 shadow">
-
-WhatsApp
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- STICKY CTA -->
-
-<div class="fixed bottom-0 left-0 w-full bg-blue-700 text-white py-4 px-6 z-40 shadow-2xl">
-
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-
-<p class="font-medium">
-Looking for fresher opportunities? Start your career journey today.
-</p>
-
-<a href="#contact"
-class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold">
-
-Apply Now
-
-</a>
-
-</div>
-
-</div>
-
-<!-- FOOTER -->
-
-<footer class="bg-gray-950 text-gray-300 py-16">
-
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-<div class="grid md:grid-cols-4 gap-12">
-
-<div>
-
-<h3 class="text-3xl font-bold text-white mb-5">
-Subhadra Consultancy
-</h3>
-
-<p class="leading-8 text-gray-400">
-Helping freshers and professionals build successful careers through guidance and placement support.
-</p>
-
-<p class="mt-5">Pune, Maharashtra</p>
-
-<p class="mt-2">
-subhadraconsultancy.services@gmail.com
-</p>
-
-<p class="mt-2">
-+91 7028374676
-</p>
-
-</div>
-
-<div>
-
-<h4 class="text-white font-semibold mb-5 text-lg">
-Quick Links
-</h4>
-
-<ul class="space-y-3">
-
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4 class="text-white font-semibold mb-5 text-lg">
-Services
-</h4>
-
-<ul class="space-y-3">
-
-<li>Resume Building</li>
-<li>Interview Coaching</li>
-<li>Career Counseling</li>
-<li>Job Assistance</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4 class="text-white font-semibold mb-5 text-lg">
-Follow Us
-</h4>
-
-<div class="flex gap-5">
-
-<a href="https://www.linkedin.com" target="_blank">
-<i data-feather="linkedin"></i>
-</a>
-
-<a href="https://www.instagram.com" target="_blank">
-<i data-feather="instagram"></i>
-</a>
-
-<a href="https://wa.me/917028374676" target="_blank">
-<i data-feather="message-circle"></i>
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
-
-© 2026 Subhadra Consultancy Services. All Rights Reserved.
-
-</div>
-
-</div>
-
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Subhadra Consultancy</h3>
+      <p>Helping freshers and experienced professionals secure the right career opportunities.</p>
+    </div>
+
+    <div>
+      <p>📞 +91 7030604676</p>
+      <p>✉ subhadraconsultancy.services@gmail.com</p>
+      <p>🌐 subhadraconsultancy.in</p>
+    </div>
+  </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/917030604676" class="whatsapp-btn">WhatsApp</a>
 
-<a href="https://wa.me/917028374676"
-target="_blank"
-class="fixed bottom-24 left-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110">
-
-<i data-feather="message-circle"></i>
-
-</a>
-
-<!-- SCROLL TOP -->
-
-<button id="scrollBtn" class="scroll-top">
-
-<i data-feather="arrow-up"></i>
-
-</button>
-
-<!-- SCRIPT -->
-
-<script>
-
-/* ICONS */
-
-feather.replace();
-
-/* MOBILE MENU */
-
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-
-menuBtn.addEventListener('click', () => {
-mobileMenu.classList.toggle('hidden');
-});
-
-/* SCROLL BUTTON */
-
-const scrollBtn = document.getElementById('scrollBtn');
-
-window.addEventListener('scroll', () => {
-
-if(window.scrollY > 300){
-scrollBtn.style.display = 'flex';
-}else{
-scrollBtn.style.display = 'none';
-}
-
-});
-
-/* SCROLL TOP */
-
-scrollBtn.addEventListener('click', () => {
-
-window.scrollTo({
-top:0,
-behavior:'smooth'
-});
-
-});
-
-/* SMOOTH SCROLL */
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-anchor.addEventListener('click', function (e) {
-
-e.preventDefault();
-
-const target = document.querySelector(this.getAttribute('href'));
-
-if(target){
-
-window.scrollTo({
-top:target.offsetTop - 70,
-behavior:'smooth'
-});
-
-}
-
-mobileMenu.classList.add('hidden');
-
-});
-
-});
-
-/* FORM SUCCESS */
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", () => {
-
-alert("Thank you! Your message has been sent successfully.");
-
-});
-
-</script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
