@@ -763,41 +763,46 @@ Absolutely. We help candidates create ATS-friendly professional resumes.
 
 <!-- CONTACT -->
 
-<section id="contact"
-class="hero-gradient py-24 text-white">
+<form 
+action="https://formsubmit.co/subhadraconsultancy.services@gmail.com" 
+method="POST"
+class="grid gap-6">
 
-<div class="max-w-5xl mx-auto px-4 relative z-10">
-
-<div class="text-center mb-14">
-
-<h2 class="text-5xl font-bold mb-6">
-Get In Touch
-</h2>
-
-<p class="text-xl opacity-90">
-Ready to start your career journey? Connect with us today.
-</p>
-
-</div>
-
-<form class="grid gap-6">
+<!-- FormSubmit Settings -->
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Inquiry - Subhadra Consultancy Services">
+<input type="hidden" name="_template" value="table">
 
 <input
 type="text"
+name="name"
 placeholder="Your Name"
+required
 class="input-field">
 
 <input
 type="email"
+name="email"
 placeholder="Your Email"
+required
+class="input-field">
+
+<input
+type="tel"
+name="phone"
+placeholder="Your Mobile Number"
+required
 class="input-field">
 
 <textarea
 rows="6"
-placeholder="Your Message"
+name="message"
+placeholder="Tell us about your requirement..."
+required
 class="input-field"></textarea>
 
 <button
+type="submit"
 class="bg-white text-primary-600 py-4 rounded-2xl font-semibold hover:scale-105 transition">
 
 Send Message
@@ -806,6 +811,17 @@ Send Message
 
 </form>
 
+<script>
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", () => {
+
+alert("Thank you! Your message has been sent successfully.");
+
+});
+
+</script>
 <div class="flex flex-wrap justify-center gap-5 mt-10">
 
 <a href="mailto:subhadraconsultancy.services@gmail.com"
