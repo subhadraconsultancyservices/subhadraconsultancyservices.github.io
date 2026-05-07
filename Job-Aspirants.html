@@ -501,7 +501,7 @@ Our Services
 
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<!-- CARD -->
+<!-- CARD: RESUME BUILDING -->
 
 <div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
 
@@ -513,7 +513,7 @@ alt="Resume Building">
 <div class="p-7">
 
 <div class="service-icon">
-<i data-feather="file-text"></i>
+<i class="fas fa-file-invoice"></i>
 </div>
 
 <h3 class="text-2xl font-bold mb-4">
@@ -528,7 +528,7 @@ ATS-friendly resume creation and professional skill profiling.
 
 </div>
 
-<!-- CARD -->
+<!-- CARD: JOB ASSISTANCE -->
 
 <div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
 
@@ -540,7 +540,7 @@ alt="Job Assistance">
 <div class="p-7">
 
 <div class="service-icon">
-<i data-feather="briefcase"></i>
+<i class="fas fa-handshake"></i>
 </div>
 
 <h3 class="text-2xl font-bold mb-4">
@@ -555,7 +555,7 @@ Helping freshers discover suitable career opportunities.
 
 </div>
 
-<!-- CARD -->
+<!-- CARD: INTERVIEW COACHING -->
 
 <div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
 
@@ -567,7 +567,7 @@ alt="Interview Coaching">
 <div class="p-7">
 
 <div class="service-icon">
-<i data-feather="users"></i>
+<i class="fas fa-user-tie"></i>
 </div>
 
 <h3 class="text-2xl font-bold mb-4">
@@ -582,7 +582,7 @@ Mock interviews and communication guidance to boost confidence.
 
 </div>
 
-<!-- CARD -->
+<!-- CARD: CAREER COUNSELING -->
 
 <div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
 
@@ -594,7 +594,7 @@ alt="Career Counseling">
 <div class="p-7">
 
 <div class="service-icon">
-<i data-feather="target"></i>
+<i class="fas fa-lightbulb"></i>
 </div>
 
 <h3 class="text-2xl font-bold mb-4">
@@ -779,180 +779,754 @@ Get in touch for career guidance and job opportunities
 </p>
 
 </div>
+       <!-- =========================================
+     WORKING CONTACT FORM
+========================================= -->
 
-<form action="https://formsubmit.co/subhadraconsultancy.services@gmail.com" method="POST">
+<!-- =========================================
+     FONT AWESOME CDN
+========================================= -->
 
-<input type="hidden" name="_captcha" value="false">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<input type="hidden" name="_template" value="table">
+<!-- =========================================
+     CONTACT SECTION
+========================================= -->
 
-<input type="hidden" name="_subject" value="New Business Enquiry">
+<section class="contact-section">
 
-<input type="text" name="company" placeholder="Company Name" required>
+  <div class="contact-form-wrapper">
 
-<input type="email" name="email" placeholder="Work Email" required>
+    <form
+      id="contactForm"
+      class="contact-form"
+      action="https://formsubmit.co/subhadraconsultancy.services@gmail.com"
+      method="POST"
+    >
 
-<input type="text" name="mobile" placeholder="Mobile Number" required>
+      <!-- FORMSUBMIT SETTINGS -->
 
-<select name="requirement" required>
-<option value="">Select Requirement</option>
-<option>Permanent Hiring</option>
-<option>Contract Staffing</option>
-<option>Bulk Hiring</option>
-<option>Executive Search</option>
-</select>
+      <input type="hidden" name="_captcha" value="false">
 
-<textarea name="message" placeholder="Tell us about your hiring requirement" required></textarea>
+      <input type="hidden" name="_template" value="table">
 
-<button type="submit">
-Submit Enquiry
-</button>
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Business Enquiry - Subhadra Consultancy"
+      >
 
-</form>
+      <input
+        type="hidden"
+        name="_next"
+        value="https://subhadraconsultancy.in"
+      >
 
-<div class="flex flex-wrap justify-center gap-5 mt-10">
+      <!-- Student Details -->
 
-<a href="mailto:subhadraconsultancy.services@gmail.com"
-class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105 shadow">
+      <div class="form-row">
 
-Email Us
+        <div class="form-group">
 
-</a>
+          <label>Name *</label>
 
-<a href="https://wa.me/917028374676"
-target="_blank"
-class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 shadow">
+          <input
+            type="text"
+            name="Name"
+            placeholder="Your Name"
+            required
+          >
 
-WhatsApp
+        </div>
 
-</a>
+        <div class="form-group">
 
-</div>
+          <label>Email *</label>
 
-</div>
+          <input
+            type="email"
+            name="Email"
+            placeholder="you@company.com"
+            required
+          >
+
+        </div>
+
+      </div>
+
+      <!-- SECOND ROW -->
+
+      <div class="form-row">
+
+        <div class="form-group">
+
+          <label>Mobile Number *</label>
+
+          <input
+            type="tel"
+            name="Mobile Number"
+            placeholder="+91 XXXXXXXXXX"
+            required
+          >
+
+        </div>
+        
+      </div>
+
+      <!-- MESSAGE -->
+
+      <div class="form-group">
+
+        <label>Requirement *</label>
+
+        <textarea
+          name="Message"
+          placeholder="Tell us about your requirements..."
+          required
+        ></textarea>
+
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+
+      <button
+        type="submit"
+        class="submit-btn"
+      >
+
+        <i class="fas fa-paper-plane"></i>
+
+        Submit Enquiry
+
+      </button>
+
+      <!-- CONTACT INFO -->
+
+      <div class="contact-extra-info">
+
+        <p>
+          <i class="fas fa-phone"></i>
+          +91 7030604676
+        </p>
+
+        <p>
+          <i class="fas fa-envelope"></i>
+          subhadraconsultancy.services@gmail.com
+        </p>
+
+        <p>
+          <i class="fas fa-globe"></i>
+          subhadraconsultancy.in
+        </p>
+
+      </div>
+
+    </form>
+
+  </div>
 
 </section>
 
-<!-- STICKY CTA -->
+<!-- =========================================
+     SUCCESS POPUP
+========================================= -->
 
-<div class="fixed bottom-0 left-0 w-full bg-blue-700 text-white py-4 px-6 z-40 shadow-2xl">
+<div class="popup-overlay" id="successPopup">
 
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+  <div class="popup-box">
 
-<p class="font-medium">
-Looking for fresher opportunities? Start your career journey today.
-</p>
+    <div class="popup-icon">
 
-<a href="#contact"
-class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold">
+      <i class="fas fa-check"></i>
 
-Apply Now
+    </div>
 
-</a>
+    <h2>Enquiry Submitted</h2>
 
-</div>
+    <p>
+      Your enquiry has been submitted successfully.
+      Our team will contact you shortly.
+    </p>
 
-</div>
+    <button onclick="closePopup()">
+      OK
+    </button>
 
-<!-- FOOTER -->
-
-<footer class="bg-gray-950 text-gray-300 py-16">
-
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-<div class="grid md:grid-cols-4 gap-12">
-
-<div>
-
-<h3 class="text-3xl font-bold text-white mb-5">
-Subhadra Consultancy
-</h3>
-
-<p class="leading-8 text-gray-400">
-Helping freshers and professionals build successful careers through guidance and placement support.
-</p>
-
-<p class="mt-5">Pune, Maharashtra</p>
-
-<p class="mt-2">
-subhadraconsultancy.services@gmail.com
-</p>
-
-<p class="mt-2">
-+91 7028374676
-</p>
+  </div>
 
 </div>
 
-<div>
+<!-- =========================================
+     CSS
+========================================= -->
 
-<h4 class="text-white font-semibold mb-5 text-lg">
-Quick Links
-</h4>
+<style>
 
-<ul class="space-y-3">
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
+body{
+  font-family:Arial,sans-serif;
+}
 
-</ul>
+.contact-section{
+  padding:100px 20px;
+  background:#f8fafc;
+}
 
-</div>
+.contact-form-wrapper{
+  max-width:900px;
+  margin:auto;
+  background:#ffffff;
+  padding:50px;
+  border-radius:30px;
+  border:1px solid #e2e8f0;
+  box-shadow:0 20px 60px rgba(0,0,0,0.08);
+}
 
-<div>
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
 
-<h4 class="text-white font-semibold mb-5 text-lg">
-Services
-</h4>
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
 
-<ul class="space-y-3">
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
 
-<li>Resume Building</li>
-<li>Interview Coaching</li>
-<li>Career Counseling</li>
-<li>Job Assistance</li>
+.form-group label{
+  font-size:14px;
+  font-weight:600;
+  color:#0f172a;
+}
 
-</ul>
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:16px 18px;
+  border:2px solid #e2e8f0;
+  border-radius:16px;
+  background:#ffffff;
+  font-size:15px;
+  transition:0.3s;
+}
 
-</div>
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
+}
 
-<div>
+.form-group textarea{
+  min-height:150px;
+  resize:none;
+}
 
-<h4 class="text-white font-semibold mb-5 text-lg">
-Follow Us
-</h4>
+.submit-btn{
+  height:62px;
+  border:none;
+  border-radius:18px;
+  background:linear-gradient(135deg,#1e3a8a,#06b6d4);
+  color:#ffffff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  transition:0.3s;
+}
 
-<div class="flex gap-5">
+.submit-btn:hover{
+  transform:translateY(-2px);
+}
 
-<a href="https://www.linkedin.com" target="_blank">
-<i data-feather="linkedin"></i>
-</a>
+.contact-extra-info{
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
 
-<a href="https://www.instagram.com" target="_blank">
-<i data-feather="instagram"></i>
-</a>
+.contact-extra-info p{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#475569;
+  font-size:15px;
+}
 
-<a href="https://wa.me/917028374676" target="_blank">
-<i data-feather="message-circle"></i>
-</a>
+.contact-extra-info i{
+  color:#2563eb;
+}
 
-</div>
+/* =========================================
+   POPUP
+========================================= */
 
-</div>
+.popup-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  visibility:hidden;
+  transition:0.3s;
+  z-index:9999;
+}
 
-</div>
+.popup-overlay.active{
+  opacity:1;
+  visibility:visible;
+}
 
-<div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+.popup-box{
+  width:90%;
+  max-width:420px;
+  background:#ffffff;
+  border-radius:24px;
+  padding:40px;
+  text-align:center;
+  animation:popupAnimation .3s ease;
+}
 
-© 2026 Subhadra Consultancy Services. All Rights Reserved.
+@keyframes popupAnimation{
 
-</div>
+  from{
+    transform:scale(.8);
+    opacity:0;
+  }
 
-</div>
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+
+}
+
+.popup-icon{
+  width:80px;
+  height:80px;
+  background:#dcfce7;
+  color:#16a34a;
+  margin:auto;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  margin-bottom:20px;
+}
+
+.popup-box h2{
+  margin-bottom:10px;
+  color:#0f172a;
+}
+
+.popup-box p{
+  color:#475569;
+  line-height:1.7;
+}
+
+.popup-box button{
+  margin-top:24px;
+  border:none;
+  background:#2563eb;
+  color:#ffffff;
+  padding:14px 32px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .contact-section{
+    padding:70px 20px;
+  }
+
+  .contact-form-wrapper{
+    padding:30px 22px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+const form = document.getElementById("contactForm");
+
+const popup = document.getElementById("successPopup");
+
+form.addEventListener("submit", function(){
+
+  popup.classList.add("active");
+
+  setTimeout(() => {
+
+    form.submit();
+
+  }, 1500);
+
+});
+
+function closePopup(){
+
+  popup.classList.remove("active");
+
+}
+
+</script>
+<!-- ==================== FOOTER ==================== -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- COMPANY INFO -->
+      <div class="footer-brand">
+
+        <h3>Subhadra Consultancy</h3>
+
+        <p>
+          Helping freshers and professionals build successful careers
+          through expert guidance, training, and placement support.
+        </p>
+
+        <div class="footer-contact">
+
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            Pune, Maharashtra
+          </p>
+
+          <p>
+            <a href="mailto:subhadraconsultancy.services@gmail.com">
+              <i class="fas fa-envelope"></i>
+              subhadraconsultancy.services@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <a href="tel:+917028374676">
+              <i class="fas fa-phone-alt"></i>
+              +91 7028374676
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links">
+
+        <h4>Quick Links</h4>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-links">
+
+        <h4>Our Services</h4>
+
+        <ul>
+          <li><a href="#">Resume Building</a></li>
+          <li><a href="#">Interview Coaching</a></li>
+          <li><a href="#">Career Counseling</a></li>
+          <li><a href="#">Placement Assistance</a></li>
+        </ul>
+
+      </div>
+
+      <!-- SOCIAL LINKS -->
+      <div class="footer-links">
+
+        <h4>Follow Us</h4>
+
+        <div class="footer-social">
+
+          <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://wa.me/917028374676" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+      <p>
+        Subhadra Consultancy Services. All Rights Reserved.
+      </p>
+
+
+    </div>
+
+  </div>
 
 </footer>
+
+<!-- ==================== FOOTER CSS ==================== -->
+
+<style>
+
+/* FOOTER */
+
+.footer {
+  background: #030712;
+  color: #d1d5db;
+  padding: 80px 0 32px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* GRID */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+/* BRAND */
+
+.footer-brand h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.footer-brand p {
+  color: #9ca3af;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* CONTACT */
+
+.footer-contact {
+  margin-top: 24px;
+}
+
+.footer-contact p {
+  margin-bottom: 12px;
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #3b82f6;
+}
+
+.footer-contact a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+/* LINKS */
+
+.footer-links h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+/* SOCIAL */
+
+.footer-social {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social a {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-size: 18px;
+
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #2563eb;
+  transform: translateY(-4px);
+}
+
+/* BOTTOM */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* BADGES */
+
+.footer-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-badges img {
+  height: 24px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .footer {
+    padding: 60px 0 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-brand h3 {
+    font-size: 26px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-badges {
+    justify-content: center;
+  }
+
+}
+
+</style>
+
+<!-- FONT AWESOME -->
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
 <!-- WHATSAPP FLOAT -->
 
