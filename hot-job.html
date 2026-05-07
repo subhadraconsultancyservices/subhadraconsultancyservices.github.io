@@ -26,7 +26,6 @@
             margin: 0;
         }
 
-        /* ==================== HEADER (MATCHED) ==================== */
         .navbar {
             position: sticky;
             top: 0;
@@ -59,7 +58,6 @@
             font-size: 20px;
         }
 
-        /* ==================== JOB CARDS ==================== */
         .job-card {
             background: white;
             border-radius: 24px;
@@ -68,7 +66,7 @@
             transition: var(--transition);
             display: flex;
             flex-direction: column;
-            position: relative;
+            height: 100%;
         }
 
         .job-card:hover {
@@ -99,7 +97,6 @@
             text-decoration: none;
         }
 
-        /* ==================== FOOTER (EXACT MATCH TO REFERENCE) ==================== */
         .footer {
             background: var(--gray-900);
             color: #94a3b8;
@@ -113,69 +110,6 @@
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 60px;
-        }
-
-        .footer-h4 {
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-
-        .footer-links a {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: var(--transition);
-            font-size: 14px;
-        }
-
-        .footer-links a:hover {
-            color: white;
-            padding-left: 5px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-        }
-
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: var(--transition);
-        }
-
-        .social-icon:hover {
-            background: var(--primary-light);
-            transform: translateY(-3px);
-        }
-
-        .footer-bottom {
-            max-width: 1280px;
-            margin: 60px auto 0;
-            padding: 30px 24px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
         }
 
         @media (max-width: 768px) {
@@ -196,7 +130,6 @@
             </a>
             <div class="flex gap-6 items-center">
                 <a href="index.html" class="hidden sm:block text-sm font-semibold text-gray-600 hover:text-blue-800 transition">Back to Home</a>
-                
             </div>
         </div>
     </header>
@@ -209,95 +142,58 @@
     </section>
 
     <main class="py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="job-card">
-                    <span class="badge bg-blue-100 text-blue-700">Internship</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">React JS Intern</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-blue-500"></i> <strong>Location:</strong> Thane</p>
-                        <p><i class="fas fa-users w-5 text-blue-500"></i> <strong>Openings:</strong> 2–3</p>
-                        <p><i class="fas fa-code w-5 text-blue-500"></i> <strong>Skills:</strong> React JS, HTML, CSS, JavaScript</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <span class="badge bg-green-100 text-green-700">Internship</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">.NET Intern</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-green-500"></i> <strong>Location:</strong> Thane</p>
-                        <p><i class="fas fa-users w-5 text-green-500"></i> <strong>Openings:</strong> 2–3</p>
-                        <p><i class="fas fa-database w-5 text-green-500"></i> <strong>Skills:</strong> C#, ASP.NET, SQL Server</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <span class="badge bg-purple-100 text-purple-700">Internship</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">React Native Intern</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-purple-500"></i> <strong>Location:</strong> Pune</p>
-                        <p><i class="fas fa-users w-5 text-purple-500"></i> <strong>Openings:</strong> 1</p>
-                        <p><i class="fas fa-mobile-alt w-5 text-purple-500"></i> <strong>Skills:</strong> React Native, Mobile Development</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <span class="badge bg-orange-100 text-orange-700">Full Time</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">React Native Developer</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-orange-500"></i> <strong>Location:</strong> Pune</p>
-                        <p><i class="fas fa-briefcase w-5 text-orange-500"></i> <strong>Experience:</strong> 2+ Years</p>
-                        <p><i class="fas fa-laptop-code w-5 text-orange-500"></i> <strong>Skills:</strong> React Native, API Integration</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <span class="badge bg-red-100 text-red-700">Hiring</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">SQL Developer</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-red-500"></i> <strong>Location:</strong> Pune</p>
-                        <p><i class="fas fa-briefcase w-5 text-red-500"></i> <strong>Experience:</strong> 3+ Years</p>
-                        <p><i class="fas fa-users w-5 text-red-500"></i> <strong>Openings:</strong> 1</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <span class="badge bg-red-100 text-red-700">Hiring</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">SQL Developer</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-red-500"></i> <strong>Location:</strong> Amaravati</p>
-                        <p><i class="fas fa-briefcase w-5 text-red-500"></i> <strong>Experience:</strong> 3+ Years</p>
-                        <p><i class="fas fa-users w-5 text-red-500"></i> <strong>Openings:</strong> 1</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <span class="badge bg-indigo-100 text-indigo-700">Full Time</span>
-                    <h3 class="text-xl font-bold mb-5 text-gray-900">Software Tester</h3>
-                    <div class="space-y-4 text-sm mb-8">
-                        <p><i class="fas fa-map-marker-alt w-5 text-indigo-500"></i> <strong>Location:</strong> Pune</p>
-                        <p><i class="fas fa-briefcase w-5 text-indigo-500"></i> <strong>Experience:</strong> 2+ Years</p>
-                        <p><i class="fas fa-vial w-5 text-indigo-500"></i> <strong>Skills:</strong> Manual & Automation Testing</p>
-                    </div>
-                    <a href="https://wa.me/917028374676" class="btn-apply">Apply Now</a>
-                </div>
-
-            </div>
+        <div id="job-list" class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <p class="col-span-full text-center">Loading jobs...</p>
         </div>
     </main>
+
+    <script>
+        const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQgY-3so9s6Hvb80lNMoRzlYvR59hfwXFgUzw9gWeMIsOVmlluK1C31YfnBlr-H2QHOa3W8gvPj8lha/pub?gid=0&single=true&output=csv';
+
+        async function fetchJobs() {
+            try {
+                const response = await fetch(CSV_URL);
+                const data = await response.text();
+                const rows = data.split('\n').slice(1);
+                const container = document.getElementById('job-list');
+                container.innerHTML = '';
+
+                rows.forEach(row => {
+                    const cols = row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+                    if (cols.length < 5) return;
+
+                    const [title, type, location, openings, skills, link] = cols.map(c => c.replace(/"/g, '').trim());
+
+                    // Badge color logic
+                    let badgeClass = "bg-blue-100 text-blue-700";
+                    if(type.toLowerCase().includes('full')) badgeClass = "bg-indigo-100 text-indigo-700";
+                    if(type.toLowerCase().includes('hiring')) badgeClass = "bg-red-100 text-red-700";
+
+                    container.innerHTML += `
+                        <div class="job-card">
+                            <span class="badge ${badgeClass}">${type}</span>
+                            <h3 class="text-xl font-bold mb-5 text-gray-900">${title}</h3>
+                            <div class="space-y-4 text-sm mb-8">
+                                <p><i class="fas fa-map-marker-alt w-5 text-blue-500"></i> <strong>Location:</strong> ${location}</p>
+                                <p><i class="fas fa-users w-5 text-blue-500"></i> <strong>Openings:</strong> ${openings}</p>
+                                <p><i class="fas fa-code w-5 text-blue-500"></i> <strong>Skills:</strong> ${skills}</p>
+                            </div>
+                            <a href="${link || 'https://wa.me/917028374676'}" target="_blank" class="btn-apply">Apply Now</a>
+                        </div>
+                    `;
+                });
+            } catch (error) {
+                console.error("Error loading jobs:", error);
+            }
+        }
+        fetchJobs();
+    </script>
 
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4 class="footer-h4">Subhadra Consultancy</h4>
-                <p class="text-sm leading-relaxed mb-6">Connecting ambition with opportunity. We provide strategic workforce solutions and professional career guidance to build a better future.</p>
+                <h4 class="text-white font-bold mb-6 text-lg">Subhadra Consultancy</h4>
+                <p class="text-sm leading-relaxed mb-6">Connecting ambition with opportunity. Strategic workforce solutions for a better future.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -305,37 +201,30 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h4 class="footer-h4">Company</h4>
+                <h4 class="text-white font-bold mb-6">Company</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">About Us</a></li>
                     <li><a href="index.html#services">Our Services</a></li>
                     <li><a href="index.html#contact">Contact Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4 class="footer-h4">Solutions</h4>
+                <h4 class="text-white font-bold mb-6">Solutions</h4>
                 <ul class="footer-links">
                     <li><a href="#">IT Staffing</a></li>
                     <li><a href="#">Executive Search</a></li>
-                    <li><a href="#">Graduate Hiring</a></li>
                     <li><a href="#">Training Programs</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4 class="footer-h4">Support</h4>
-                <ul class="footer-links">
-                    <li><a href="mailto:subhadraconsultancy.services@gmail.com">Email Us</a></li>
-                    <li><a href="https://wa.me/917028374676">WhatsApp Support</a></li>
-                    <li><a href="#">Career Guidance</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
+                <h4 class="text-white font-bold mb-6">Support</h4>
+                <p class="text-sm">subhadraconsultancy.services@gmail.com</p>
+                <p class="text-sm mt-2">+91 7028374676</p>
             </div>
         </div>
-        <div class="footer-bottom">
-          SUBHADRA CONSULTANCY SERVICES. ALL RIGHTS RESERVED.
+        <div class="text-center border-t border-white/10 mt-16 pt-8 text-[10px] uppercase tracking-widest">
+            SUBHADRA CONSULTANCY SERVICES. ALL RIGHTS RESERVED.
         </div>
     </footer>
-
 </body>
 </html>
