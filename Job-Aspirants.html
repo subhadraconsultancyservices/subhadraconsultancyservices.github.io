@@ -1,1552 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subhadra Consultancy Services | Strategic Workforce Solutions</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script>
+<title>Subhadra Consultancy Services | Connecting Talent to Opportunities</title>
 
-document.addEventListener("DOMContentLoaded", function(){
+<meta name="description"
+content="Empowering freshers, experienced professionals, and job seekers with expert guidance, interview preparation, resume building, and personalized placement support." />
 
-  const title = document.querySelector("title");
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  if(title){
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    document.querySelector("header .logo, .navbar-brand, .brand-name, .site-title")?.addEventListener("click", function(e){
-
-      e.preventDefault();
-
-      window.location.href = "https://subhadraconsultancy.in/";
-
-    });
-
-  }
-
-});
-
-</script>
-  
-  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
-  <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
-  
-  <style>
-    /* ==================== CSS VARIABLES ==================== */
-    :root {
-      --primary: #1e3a8a;
-      --primary-light: #3b82f6;
-      --primary-dark: #1e40af;
-      --secondary: #0f172a;
-      --accent: #06b6d4;
-      --accent-light: #22d3ee;
-      --gold: #f59e0b;
-      --success: #10b981;
-      --white: #ffffff;
-      --gray-50: #f8fafc;
-      --gray-100: #f1f5f9;
-      --gray-200: #e2e8f0;
-      --gray-300: #cbd5e1;
-      --gray-400: #94a3b8;
-      --gray-500: #64748b;
-      --gray-600: #475569;
-      --gray-700: #334155;
-      --gray-800: #1e293b;
-      --gray-900: #0f172a;
-      
-      --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
-      --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-      --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
-      
-      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-      --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-      --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-      --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.3);
-      
-      --radius-sm: 8px;
-      --radius: 12px;
-      --radius-lg: 16px;
-      --radius-xl: 24px;
-      --radius-2xl: 32px;
-      
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    /* ==================== RESET & BASE ==================== */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 100px;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--gray-50);
-      color: var(--gray-700);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--gray-900);
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      transition: var(--transition);
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* ==================== NAVBAR ==================== */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 16px 0;
-      transition: var(--transition);
-      background: transparent;
-    }
-
-    .navbar.scrolled {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      box-shadow: var(--shadow-md);
-      padding: 12px 0;
-    }
-
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--gradient-primary);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      color: var(--white);
-      font-weight: 800;
-      box-shadow: var(--shadow-glow);
-    }
-
-    .logo-text h2 {
-      font-size: 20px;
-      font-weight: 800;
-      background: var(--gradient-primary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .navbar:not(.scrolled) .logo-text h2 {
-      background: var(--white);
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-
-    .logo-text p {
-      font-size: 11px;
-      color: var(--gray-500);
-      font-weight: 500;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .navbar:not(.scrolled) .logo-text p {
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .nav-links a {
-      padding: 10px 20px;
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--gray-600);
-      border-radius: var(--radius);
-      position: relative;
-    }
-
-    .navbar:not(.scrolled) .nav-links a {
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-      background: var(--gray-100);
-    }
-
-    .navbar:not(.scrolled) .nav-links a:hover {
-      color: var(--white);
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px 28px;
-      font-size: 15px;
-      font-weight: 600;
-      border-radius: var(--radius);
-      cursor: pointer;
-      border: none;
-      transition: var(--transition);
-    }
-
-    .btn-primary {
-      background: var(--gradient-primary);
-      color: var(--white);
-      box-shadow: var(--shadow-md), 0 0 20px rgba(59, 130, 246, 0.3);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-lg), 0 0 30px rgba(59, 130, 246, 0.4);
-    }
-
-    .btn-secondary {
-      background: var(--white);
-      color: var(--primary);
-      border: 2px solid var(--gray-200);
-    }
-
-    .btn-secondary:hover {
-      border-color: var(--primary);
-      background: var(--gray-50);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .btn-outline:hover {
-      background: var(--white);
-      color: var(--primary);
-      border-color: var(--white);
-    }
-
-    .mobile-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 8px;
-    }
-
-    .mobile-toggle span {
-      width: 24px;
-      height: 2px;
-      background: var(--gray-700);
-      transition: var(--transition);
-    }
-
-    .navbar:not(.scrolled) .mobile-toggle span {
-      background: var(--white);
-    }
-
-    /* ==================== HERO SECTION ==================== */
-    .hero {
-      min-height: 100vh;
-      background: var(--gradient-hero);
-      position: relative;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='[w3.org](http://www.w3.org/2000/svg)'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.5;
-    }
-
-    .hero-bg-shapes {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      pointer-events: none;
-    }
-
-    .hero-shape {
-      position: absolute;
-      border-radius: 50%;
-      background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
-      filter: blur(60px);
-      animation: float 20s ease-in-out infinite;
-    }
-
-    .hero-shape-1 {
-      width: 600px;
-      height: 600px;
-      top: -200px;
-      right: -100px;
-      animation-delay: 0s;
-    }
-
-    .hero-shape-2 {
-      width: 400px;
-      height: 400px;
-      bottom: -100px;
-      left: -100px;
-      animation-delay: -5s;
-    }
-
-    .hero-shape-3 {
-      width: 300px;
-      height: 300px;
-      top: 50%;
-      left: 50%;
-      animation-delay: -10s;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      25% { transform: translate(30px, -30px) scale(1.05); }
-      50% { transform: translate(-20px, 20px) scale(0.95); }
-      75% { transform: translate(20px, 30px) scale(1.02); }
-    }
-
-    .hero .container {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      padding-top: 100px;
-      padding-bottom: 60px;
-    }
-
-    .hero-content {
-      color: var(--white);
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--accent-light);
-      margin-bottom: 24px;
-      animation: fadeInUp 0.6s ease-out;
-    }
-
-    .hero-badge i {
-      font-size: 16px;
-    }
-
-    .hero h1 {
-      font-size: clamp(40px, 5vw, 64px);
-      color: var(--white);
-      margin-bottom: 24px;
-      line-height: 1.1;
-      animation: fadeInUp 0.6s ease-out 0.1s both;
-    }
-
-    .hero h1 span {
-      background: linear-gradient(135deg, var(--accent-light) 0%, var(--gold) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-description {
-      font-size: 18px;
-      color: rgba(255, 255, 255, 0.8);
-      margin-bottom: 32px;
-      line-height: 1.7;
-      max-width: 540px;
-      animation: fadeInUp 0.6s ease-out 0.2s both;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 48px;
-      animation: fadeInUp 0.6s ease-out 0.3s both;
-    }
-
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      animation: fadeInUp 0.6s ease-out 0.4s both;
-    }
-
-    .hero-badges img {
-      height: 24px;
-      transition: var(--transition);
-    }
-
-    .hero-badges img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Stats Card */
-    .hero-stats-card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: var(--radius-2xl);
-      padding: 40px;
-      animation: fadeInRight 0.8s ease-out 0.3s both;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-
-    .stat-item {
-      text-align: center;
-      padding: 24px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: var(--transition);
-    }
-
-    .stat-item:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-4px);
-    }
-
-    .stat-number {
-      font-size: 48px;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--white) 0%, var(--accent-light) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .stat-label {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.7);
-      font-weight: 500;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    /* ==================== TRUST BAR ==================== */
-    .trust-bar {
-      background: var(--white);
-      padding: 40px 0;
-      border-bottom: 1px solid var(--gray-100);
-    }
-
-    .trust-bar .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
-    }
-
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--gray-500);
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .trust-item i {
-      font-size: 24px;
-      color: var(--primary);
-    }
-
-    /* ==================== SECTION STYLING ==================== */
-    section {
-      padding: 100px 0;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 64px;
-    }
-
-    .section-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 20px;
-      background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
-      border-radius: 50px;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 16px;
-    }
-
-    .section-header h2 {
-      font-size: clamp(32px, 4vw, 48px);
-      margin-bottom: 16px;
-    }
-
-    .section-header p {
-      font-size: 18px;
-      color: var(--gray-500);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* ==================== SOLUTIONS SECTION ==================== */
-    .solutions {
-      background: var(--gray-50);
-    }
-
-    .solutions-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .solution-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      padding: 40px 32px;
-      border: 1px solid var(--gray-100);
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .solution-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: var(--gradient-primary);
-      transform: scaleX(0);
-      transition: var(--transition);
-    }
-
-    .solution-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-xl);
-      border-color: transparent;
-    }
-
-    .solution-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    .solution-icon {
-      width: 64px;
-      height: 64px;
-      background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
-      border-radius: var(--radius-lg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
-      font-size: 28px;
-      color: var(--primary);
-      transition: var(--transition);
-    }
-
-    .solution-card:hover .solution-icon {
-      background: var(--gradient-primary);
-      color: var(--white);
-      transform: scale(1.1);
-    }
-
-    .solution-card h3 {
-      font-size: 20px;
-      margin-bottom: 12px;
-    }
-
-    .solution-card p {
-      color: var(--gray-500);
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    /* ==================== INDUSTRIES SECTION ==================== */
-    .industries {
-      background: var(--gradient-dark);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .industries::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='[w3.org](http://www.w3.org/2000/svg)'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    .industries .section-header h2,
-    .industries .section-header p {
-      color: var(--white);
-    }
-
-    .industries .section-badge {
-      background: rgba(255, 255, 255, 0.1);
-      color: var(--accent-light);
-    }
-
-    .industries-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .industry-card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-lg);
-      padding: 32px 24px;
-      text-align: center;
-      transition: var(--transition);
-    }
-
-    .industry-card:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-4px);
-      border-color: var(--accent);
-    }
-
-    .industry-card i {
-      font-size: 36px;
-      color: var(--accent-light);
-      margin-bottom: 16px;
-    }
-
-    .industry-card h4 {
-      font-size: 14px;
-      color: var(--white);
-      font-weight: 600;
-    }
-
-    /* ==================== WHY CHOOSE US ==================== */
-    .why-us {
-      background: var(--white);
-    }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .why-image {
-      position: relative;
-      border-radius: var(--radius-2xl);
-      overflow: hidden;
-    }
-
-    .why-image img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-    }
-
-    .why-image-overlay {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      right: 24px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(20px);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .why-image-stat {
-      text-align: center;
-      padding: 0 20px;
-      border-right: 1px solid var(--gray-200);
-    }
-
-    .why-image-stat:last-child {
-      border-right: none;
-    }
-
-    .why-image-stat h3 {
-      font-size: 28px;
-      color: var(--primary);
-    }
-
-    .why-image-stat p {
-      font-size: 12px;
-      color: var(--gray-500);
-      font-weight: 500;
-    }
-
-    .why-content .section-badge {
-      margin-bottom: 16px;
-    }
-
-    .why-content h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-
-    .why-content > p {
-      color: var(--gray-500);
-      font-size: 17px;
-      margin-bottom: 32px;
-      line-height: 1.8;
-    }
-
-    .why-features {
-      display: grid;
-      gap: 20px;
-    }
-
-    .why-feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 20px;
-      background: var(--gray-50);
-      border-radius: var(--radius-lg);
-      transition: var(--transition);
-    }
-
-    .why-feature:hover {
-      background: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
-      transform: translateX(8px);
-    }
-
-    .why-feature-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--gradient-primary);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-
-    .why-feature h4 {
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
-
-    .why-feature p {
-      font-size: 14px;
-      color: var(--gray-500);
-    }
-
-    /* ==================== PROCESS SECTION ==================== */
-    .process {
-      background: var(--gray-50);
-    }
-
-    .process-timeline {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      margin-top: 60px;
-    }
-
-    .process-timeline::before {
-      content: '';
-      position: absolute;
-      top: 40px;
-      left: 80px;
-      right: 80px;
-      height: 4px;
-      background: var(--gray-200);
-      z-index: 1;
-    }
-
-    .process-step {
-      flex: 1;
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .process-number {
-      width: 80px;
-      height: 80px;
-      background: var(--white);
-      border: 4px solid var(--gray-200);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--gray-400);
-      transition: var(--transition);
-    }
-
-    .process-step:hover .process-number {
-      background: var(--gradient-primary);
-      border-color: var(--primary);
-      color: var(--white);
-      transform: scale(1.1);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .process-step h4 {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    .process-step p {
-      font-size: 14px;
-      color: var(--gray-500);
-      max-width: 200px;
-      margin: 0 auto;
-    }
-
-    /* ==================== DUAL CTA SECTION ==================== */
-    .dual-cta {
-      background: var(--white);
-    }
-
-    .dual-cta-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-
-    .cta-card {
-      border-radius: var(--radius-2xl);
-      padding: 48px;
-      position: relative;
-      overflow: hidden;
-      transition: var(--transition);
-    }
-
-    .cta-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .cta-card.employers {
-      background: var(--gradient-primary);
-      color: var(--white);
-    }
-
-    .cta-card.job-seekers {
-      background: var(--gradient-dark);
-      color: var(--white);
-    }
-
-    .cta-card-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 50px;
-      font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    .cta-card h3 {
-      font-size: 28px;
-      color: var(--white);
-      margin-bottom: 16px;
-    }
-
-    .cta-card p {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 16px;
-      margin-bottom: 24px;
-      line-height: 1.7;
-    }
-
-    .cta-card .btn {
-      background: var(--white);
-      color: var(--primary);
-    }
-
-    .cta-card .btn:hover {
-      background: var(--gray-100);
-    }
-
-    /* ==================== TESTIMONIALS ==================== */
-    .testimonials {
-      background: var(--gray-50);
-    }
-
-    .testimonial-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      padding: 48px;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      border: 1px solid var(--gray-100);
-      position: relative;
-    }
-
-    .testimonial-card::before {
-      content: '"';
-      position: absolute;
-      top: 24px;
-      left: 48px;
-      font-size: 120px;
-      color: var(--gray-100);
-      font-family: Georgia, serif;
-      line-height: 1;
-    }
-
-    .testimonial-card blockquote {
-      font-size: 22px;
-      color: var(--gray-700);
-      font-style: italic;
-      line-height: 1.7;
-      margin-bottom: 32px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-    }
-
-    .testimonial-avatar {
-      width: 56px;
-      height: 56px;
-      background: var(--gradient-primary);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    .testimonial-info h4 {
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
-
-    .testimonial-info p {
-      font-size: 14px;
-      color: var(--gray-500);
-    }
-
-    /* ==================== CONTACT SECTION ==================== */
-    .contact {
-      background: var(--white);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .contact-info h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-
-    .contact-info > p {
-      color: var(--gray-500);
-      font-size: 17px;
-      margin-bottom: 40px;
-    }
-
-    .contact-details {
-      display: grid;
-      gap: 24px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-    }
-
-    .contact-item-icon {
-      width: 56px;
-      height: 56px;
-      background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary);
-      font-size: 24px;
-      flex-shrink: 0;
-    }
-
-    .contact-item h4 {
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
-
-    .contact-item p {
-      color: var(--gray-500);
-      font-size: 15px;
-    }
-
-    .contact-item a {
-      color: var(--primary);
-      font-weight: 500;
-    }
-
-    .contact-form-wrapper {
-      background: var(--gray-50);
-      border-radius: var(--radius-2xl);
-      padding: 48px;
-    }
-
-    .contact-form {
-      display: grid;
-      gap: 20px;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .form-group label {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--gray-700);
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      padding: 16px 20px;
-      border: 2px solid var(--gray-200);
-      border-radius: var(--radius);
-      font-size: 15px;
-      font-family: inherit;
-      transition: var(--transition);
-      background: var(--white);
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.1);
-    }
-
-    .form-group textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .contact-form .btn {
-      width: 100%;
-      padding: 18px;
-      font-size: 16px;
-    }
-
-    /* ==================== FOOTER ==================== */
-    .footer {
-      background: var(--gray-900);
-      color: var(--white);
-      padding: 80px 0 32px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 60px;
-      margin-bottom: 60px;
-    }
-
-    .footer-brand h3 {
-      font-size: 24px;
-      color: var(--white);
-      margin-bottom: 16px;
-    }
-
-    .footer-brand p {
-      color: var(--gray-400);
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 24px;
-    }
-
-    .footer-social {
-      display: flex;
-      gap: 12px;
-    }
-
-    .footer-social a {
-      width: 44px;
-      height: 44px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 18px;
-      transition: var(--transition);
-    }
-
-    .footer-social a:hover {
-      background: var(--primary);
-      transform: translateY(-4px);
-    }
-
-    .footer-links h4 {
-      font-size: 16px;
-      color: var(--white);
-      margin-bottom: 24px;
-    }
-
-    .footer-links ul {
-      display: grid;
-      gap: 12px;
-    }
-
-    .footer-links a {
-      color: var(--gray-400);
-      font-size: 14px;
-      transition: var(--transition);
-    }
-
-    .footer-links a:hover {
-      color: var(--white);
-      padding-left: 8px;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-bottom p {
-      color: var(--gray-500);
-      font-size: 14px;
-    }
-
-    .footer-badges {
-      display: flex;
-      gap: 8px;
-    }
-
-    .footer-badges img {
-      height: 20px;
-    }
-
-    /* ==================== WHATSAPP BUTTON ==================== */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 60px;
-      height: 60px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 32px;
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-      z-index: 1000;
-      transition: var(--transition);
-    }
-
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
-    }
-
-    /* ==================== SCROLL TO TOP ==================== */
-    .scroll-top {
-      position: fixed;
-      bottom: 100px;
-      right: 24px;
-      width: 48px;
-      height: 48px;
-      background: var(--gradient-primary);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 20px;
-      box-shadow: var(--shadow-lg);
-      z-index: 1000;
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-    }
-
-    .scroll-top.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .scroll-top:hover {
-      transform: translateY(-4px);
-    }
-
-    /* ==================== RESPONSIVE DESIGN ==================== */
-    @media (max-width: 1024px) {
-      .hero .container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 60px;
-      }
-
-      .hero-content {
-        order: 1;
-      }
-
-      .hero-stats-card {
-        order: 2;
-        max-width: 500px;
-        margin: 0 auto;
-      }
-
-      .hero-description {
-        margin: 0 auto 32px;
-      }
-
-      .hero-buttons {
-        justify-content: center;
-      }
-
-      .hero-badges {
-        justify-content: center;
-      }
-
-      .solutions-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .industries-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .why-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
-      }
-
-      .why-image {
-        order: -1;
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .nav-links, .navbar .btn {
-        display: none;
-      }
-
-      .mobile-toggle {
-        display: flex;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-      .section-header h2 {
-        font-size: 28px;
-      }
-
-      .solutions-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .industries-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .process-timeline {
-        flex-direction: column;
-        gap: 32px;
-      }
-
-      .process-timeline::before {
-        display: none;
-      }
-
-      .dual-cta-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-      }
-
-      .trust-bar .container {
-        gap: 32px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .industries-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-      }
-
-      .hero-buttons .btn {
-        width: 100%;
-      }
-    }
-
-    /* ==================== MOBILE NAV ==================== */
-    .mobile-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(15, 23, 42, 0.98);
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-    }
-
-    .mobile-nav.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .mobile-nav a {
-      font-size: 24px;
-      color: var(--white);
-      font-weight: 600;
-    }
-
-    .mobile-nav .btn {
-      margin-top: 24px;
-    }
-
-    .mobile-nav-close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 32px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="container">
-      <div class="logo">
-        <div class="logo-icon">S</div>
-        <div class="logo-text">
-          <h2>Subhadra Consultancy</h2>
-          <p>Strategic Workforce Solutions</p>
-        </div>
-      </div>
-      
-      <nav class="nav-links">
-        <a href="#solutions">Solutions</a>
-        <a href="#industries">Industries</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      
-      <a href="#contact" class="btn btn-primary">
-        <i class="fas fa-paper-plane"></i>
-        Business Enquiry
-      </a>
-      
-      <div class="mobile-toggle" onclick="toggleMobileNav()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </header>
-
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav" id="mobileNav">
-    <div class="mobile-nav-close" onclick="toggleMobileNav()">
-      <i class="fas fa-times"></i>
-    </div>
-    <a href="#solutions" onclick="toggleMobileNav()">Solutions</a>
-    <a href="#industries" onclick="toggleMobileNav()">Industries</a>
-    <a href="#why-us" onclick="toggleMobileNav()">Why Us</a>
-    <a href="#process" onclick="toggleMobileNav()">Process</a>
-    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
-    <a href="#contact" class="btn btn-primary" onclick="toggleMobileNav()">Business Enquiry</a>
-  </div>
-  
-  <!-- =========================================
-     WORKING 
-========================================= -->
-
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
 <script>
 tailwind.config = {
@@ -1747,9 +216,48 @@ class="hero-gradient text-white pt-36 pb-24">
 
 <div class="fade-up">
 
+<div class="glass inline-flex px-5 py-2 rounded-full text-sm mb-7">
+Empowering Fresh & Experienced Talent Careers
+</div>
+
+<h1 class="hero-title text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+
+Connecting Fresh & Experienced Talent With Career Opportunities
+
+</h1>
+
+<p class="text-lg md:text-xl opacity-90 leading-8 mb-10">
+
+We help freshers, experienced professionals, and job seekers build successful careers through resume building, interview preparation, career counseling, and placement support.
+
+</p>
+
 <div class="flex flex-wrap gap-5">
 
+<a href="#services"
+class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105">
 
+Explore Services
+
+</a>
+
+<a href="#contact"
+class="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+<div class="fade-up">
+
+<img
+src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+alt="Career Guidance"
+class="rounded-[30px] shadow-2xl w-full object-cover">
 
 </div>
 
@@ -1757,8 +265,82 @@ class="hero-gradient text-white pt-36 pb-24">
 
 </div>
 
+</section>
 
+<section id="about" class="py-24 bg-gray-50">
 
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-16">
+  
+<h2 class="text-4xl font-bold mb-4">
+About Us
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
+</div>
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+
+<div>
+
+<img
+src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+alt="Team"
+class="rounded-[30px] shadow-2xl">
+
+</div>
+
+<div>
+
+<h3 class="text-3xl font-bold mb-6">
+Helping Freshers Build Strong Careers
+</h3>
+
+<p class="text-lg text-gray-600 leading-8 mb-6">
+
+At Subhadra Consultancy Services, we are committed to guiding fresh graduates and job seekers toward meaningful career opportunities.
+
+</p>
+
+<p class="text-lg text-gray-600 leading-8 mb-8">
+
+Our expert guidance, personalized support, interview preparation, and resume optimization help candidates stand out in today's competitive job market.
+
+</p>
+
+<div class="grid grid-cols-2 gap-6">
+
+<div class="bg-white rounded-3xl p-6 shadow-md text-center">
+
+<h3 class="text-4xl font-bold text-primary-600">5+</h3>
+
+<p class="mt-2 text-gray-600">
+Industry Experts
+</p>
+
+</div>
+
+<div class="bg-white rounded-3xl p-6 shadow-md text-center">
+
+<h3 class="text-4xl font-bold text-primary-600">24/7</h3>
+
+<p class="mt-2 text-gray-600">
+Candidate Support
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- HOT JOBS -->
 
@@ -1812,913 +394,662 @@ View All Hot Jobs
 <div>
 
 <img
-src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=cro"
+src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop"
 alt="Hot Jobs"
 class="w-full h-full object-cover"
 >
 
 </div>
 
-
-      
-      
-      
-      
-      
-      
-      
-      
-       <!-- =========================================
-     WORKING CONTACT FORM
-========================================= -->
-
-<!-- =========================================
-     FONT AWESOME CDN
-========================================= -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- =========================================
-     CONTACT SECTION
-========================================= -->
-
-<section class="contact-section">
-
-  <div class="contact-form-wrapper">
-
-    <form
-      id="contactForm"
-      class="contact-form"
-      action="https://formsubmit.co/subhadraconsultancy.services@gmail.com"
-      method="POST"
-    >
-
-      <!-- FORMSUBMIT SETTINGS -->
-
-      <input type="hidden" name="_captcha" value="false">
-
-      <input type="hidden" name="_template" value="table">
-
-      <input
-        type="hidden"
-        name="_subject"
-        value="New Business Enquiry - Subhadra Consultancy"
-      >
-
-      <input
-        type="hidden"
-        name="_next"
-        value="https://subhadraconsultancy.in"
-      >
-
-      <!-- COMPANY -->
-
-      <div class="form-row">
-
-        <div class="form-group">
-
-          <label>Company Name *</label>
-
-          <input
-            type="text"
-            name="Company Name"
-            placeholder="Your company name"
-            required
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Work Email *</label>
-
-          <input
-            type="email"
-            name="Work Email"
-            placeholder="you@company.com"
-            required
-          >
-
-        </div>
-
-      </div>
-
-      <!-- SECOND ROW -->
-
-      <div class="form-row">
-
-        <div class="form-group">
-
-          <label>Mobile Number *</label>
-
-          <input
-            type="tel"
-            name="Mobile Number"
-            placeholder="+91 XXXXXXXXXX"
-            required
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Requirement Type</label>
-
-          <select name="Requirement">
-
-            <option value="">
-              Select requirement type
-            </option>
-
-            <option value="Permanent Hiring">
-              Permanent Hiring
-            </option>
-
-            <option value="Contract Staffing">
-              Contract Staffing
-            </option>
-
-            <option value="Bulk Hiring">
-              Bulk Hiring
-            </option>
-
-            <option value="Executive Search">
-              Executive Search
-            </option>
-
-            <option value="IT Recruitment">
-              IT Recruitment
-            </option>
-
-            <option value="HR Outsourcing">
-              HR Outsourcing
-            </option>
-
-          </select>
-
-        </div>
-
-      </div>
-
-      <!-- MESSAGE -->
-
-      <div class="form-group">
-
-        <label>Hiring Requirement *</label>
-
-        <textarea
-          name="Message"
-          placeholder="Tell us about your hiring requirements..."
-          required
-        ></textarea>
-
-      </div>
-
-      <!-- SUBMIT BUTTON -->
-
-      <button
-        type="submit"
-        class="submit-btn"
-      >
-
-        <i class="fas fa-paper-plane"></i>
-
-        Submit Enquiry
-
-      </button>
-
-      <!-- CONTACT INFO -->
-
-      <div class="contact-extra-info">
-
-        <p>
-          <i class="fas fa-phone"></i>
-          +91 7030604676
-        </p>
-
-        <p>
-          <i class="fas fa-envelope"></i>
-          subhadraconsultancy.services@gmail.com
-        </p>
-
-        <p>
-          <i class="fas fa-globe"></i>
-          subhadraconsultancy.in
-        </p>
-
-      </div>
-
-    </form>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     SUCCESS POPUP
-========================================= -->
-
-<div class="popup-overlay" id="successPopup">
-
-  <div class="popup-box">
-
-    <div class="popup-icon">
-
-      <i class="fas fa-check"></i>
-
-    </div>
-
-    <h2>Enquiry Submitted</h2>
-
-    <p>
-      Your enquiry has been submitted successfully.
-      Our team will contact you shortly.
-    </p>
-
-    <button onclick="closePopup()">
-      OK
-    </button>
-
-  </div>
+</div>
 
 </div>
 
-<!-- =========================================
-     CSS
-========================================= -->
+</div>
 
-<style>
+</section>
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+<!-- JOB CATEGORIES -->
 
-body{
-  font-family:Arial,sans-serif;
-}
+<section class="py-24 bg-gray-50">
 
-.contact-section{
-  padding:100px 20px;
-  background:#f8fafc;
-}
+<div class="max-w-7xl mx-auto px-6">
 
-.contact-form-wrapper{
-  max-width:900px;
-  margin:auto;
-  background:#ffffff;
-  padding:50px;
-  border-radius:30px;
-  border:1px solid #e2e8f0;
-  box-shadow:0 20px 60px rgba(0,0,0,0.08);
-}
+<div class="text-center mb-16">
 
-.contact-form{
-  display:flex;
-  flex-direction:column;
-  gap:24px;
-}
+<h2 class="text-4xl font-bold mb-4">
+Popular Job Categories
+</h2>
 
-.form-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
-}
+<p class="text-gray-600">
+Explore opportunities based on your interests
+</p>
 
-.form-group{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
+</div>
 
-.form-group label{
-  font-size:14px;
-  font-weight:600;
-  color:#0f172a;
-}
+<div class="grid md:grid-cols-4 gap-8">
 
-.form-group input,
-.form-group select,
-.form-group textarea{
-  width:100%;
-  padding:16px 18px;
-  border:2px solid #e2e8f0;
-  border-radius:16px;
-  background:#ffffff;
-  font-size:15px;
-  transition:0.3s;
-}
+<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-  outline:none;
-  border-color:#2563eb;
-  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
-}
+<i data-feather="monitor" class="text-blue-600 w-12 h-12 mb-5"></i>
 
-.form-group textarea{
-  min-height:150px;
-  resize:none;
-}
+<h3 class="font-bold text-2xl mb-3">IT Jobs</h3>
 
-.submit-btn{
-  height:62px;
-  border:none;
-  border-radius:18px;
-  background:linear-gradient(135deg,#1e3a8a,#06b6d4);
-  color:#ffffff;
-  font-size:16px;
-  font-weight:700;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  transition:0.3s;
-}
+<p class="text-gray-600">
+Software, Cloud, DevOps & Support roles
+</p>
 
-.submit-btn:hover{
-  transform:translateY(-2px);
-}
+</div>
 
-.contact-extra-info{
-  margin-top:10px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
+<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
 
-.contact-extra-info p{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:#475569;
-  font-size:15px;
-}
+<i data-feather="headphones" class="text-blue-600 w-12 h-12 mb-5"></i>
 
-.contact-extra-info i{
-  color:#2563eb;
-}
+<h3 class="font-bold text-2xl mb-3">BPO Jobs</h3>
 
-/* =========================================
-   POPUP
-========================================= */
+<p class="text-gray-600">
+Customer support and voice process roles
+</p>
 
-.popup-overlay{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.5);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  opacity:0;
-  visibility:hidden;
-  transition:0.3s;
-  z-index:9999;
-}
+</div>
 
-.popup-overlay.active{
-  opacity:1;
-  visibility:visible;
-}
+<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
 
-.popup-box{
-  width:90%;
-  max-width:420px;
-  background:#ffffff;
-  border-radius:24px;
-  padding:40px;
-  text-align:center;
-  animation:popupAnimation .3s ease;
-}
+<i data-feather="briefcase" class="text-blue-600 w-12 h-12 mb-5"></i>
 
-@keyframes popupAnimation{
+<h3 class="font-bold text-2xl mb-3">Internships</h3>
 
-  from{
-    transform:scale(.8);
-    opacity:0;
-  }
+<p class="text-gray-600">
+Freshers internship opportunities
+</p>
 
-  to{
-    transform:scale(1);
-    opacity:1;
-  }
+</div>
 
-}
+<div class="bg-white p-8 rounded-3xl shadow hover:shadow-2xl">
 
-.popup-icon{
-  width:80px;
-  height:80px;
-  background:#dcfce7;
-  color:#16a34a;
-  margin:auto;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:34px;
-  margin-bottom:20px;
-}
+<i data-feather="settings" class="text-blue-600 w-12 h-12 mb-5"></i>
 
-.popup-box h2{
-  margin-bottom:10px;
-  color:#0f172a;
-}
+<h3 class="font-bold text-2xl mb-3">Engineering</h3>
 
-.popup-box p{
-  color:#475569;
-  line-height:1.7;
-}
+<p class="text-gray-600">
+Mechanical, Civil & Core engineering jobs
+</p>
 
-.popup-box button{
-  margin-top:24px;
-  border:none;
-  background:#2563eb;
-  color:#ffffff;
-  padding:14px 32px;
-  border-radius:12px;
-  cursor:pointer;
-  font-weight:600;
-  font-size:15px;
-}
+</div>
 
-/* MOBILE */
+</div>
 
-@media(max-width:768px){
+</div>
 
-  .contact-section{
-    padding:70px 20px;
-  }
+</section>
 
-  .contact-form-wrapper{
-    padding:30px 22px;
-  }
+<!-- SERVICES -->
 
-  .form-row{
-    grid-template-columns:1fr;
-  }
+<section id="services" class="py-24 bg-white">
 
-}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-</style>
+<div class="text-center mb-16">
 
-<!-- =========================================
-     JAVASCRIPT
-========================================= -->
+<h2 class="text-4xl font-bold mb-4">
+Our Services
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
+<img
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+class="w-full h-56 object-cover"
+alt="Resume Building">
+
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="file-text"></i>
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Resume Building
+</h3>
+
+<p class="text-gray-600 leading-7">
+ATS-friendly resume creation and professional skill profiling.
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
+<img
+src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+class="w-full h-56 object-cover"
+alt="Job Assistance">
+
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="briefcase"></i>
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Job Assistance
+</h3>
+
+<p class="text-gray-600 leading-7">
+Helping freshers discover suitable career opportunities.
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
+<img
+src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=1200&auto=format&fit=crop"
+class="w-full h-56 object-cover"
+alt="Interview Coaching">
+
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="users"></i>
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Interview Coaching
+</h3>
+
+<p class="text-gray-600 leading-7">
+Mock interviews and communication guidance to boost confidence.
+</p>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="card-hover bg-gray-50 rounded-[30px] overflow-hidden shadow-lg">
+
+<img
+src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop"
+class="w-full h-56 object-cover"
+alt="Career Counseling">
+
+<div class="p-7">
+
+<div class="service-icon">
+<i data-feather="target"></i>
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Career Counseling
+</h3>
+
+<p class="text-gray-600 leading-7">
+Personalized career guidance sessions for candidates.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="py-24 bg-gray-50">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-16">
+
+<h2 class="text-4xl font-bold mb-4">
+Success Stories
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
+
+<div class="flex items-center gap-4 mb-6">
+
+<img
+src="https://randomuser.me/api/portraits/men/32.jpg"
+class="w-16 h-16 rounded-full">
+
+<div>
+<h4 class="font-bold text-lg">Rajesh Mohanty</h4>
+<p class="text-gray-500">IT Fresher</p>
+</div>
+
+</div>
+
+<p class="text-gray-600 leading-8 italic">
+“Subhadra Consultancy helped me secure my first IT job.”
+</p>
+
+</div>
+
+<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
+
+<div class="flex items-center gap-4 mb-6">
+
+<img
+src="https://randomuser.me/api/portraits/women/44.jpg"
+class="w-16 h-16 rounded-full">
+
+<div>
+<h4 class="font-bold text-lg">Priyanka Das</h4>
+<p class="text-gray-500">Graduate</p>
+</div>
+
+</div>
+
+<p class="text-gray-600 leading-8 italic">
+“Excellent support throughout my job search journey.”
+</p>
+
+</div>
+
+<div class="testimonial-card bg-white rounded-[30px] p-8 shadow-lg">
+
+<div class="flex items-center gap-4 mb-6">
+
+<img
+src="https://randomuser.me/api/portraits/men/75.jpg"
+class="w-16 h-16 rounded-full">
+
+<div>
+<h4 class="font-bold text-lg">Amit Sharma</h4>
+<p class="text-gray-500">Diploma Holder</p>
+</div>
+
+</div>
+
+<p class="text-gray-600 leading-8 italic">
+“The mock interviews helped me crack interviews confidently.”
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section id="faq" class="py-24 bg-white">
+
+<div class="max-w-5xl mx-auto px-4">
+
+<div class="text-center mb-16">
+
+<h2 class="text-4xl font-bold mb-4">
+Frequently Asked Questions
+</h2>
+
+<div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+
+</div>
+
+<div class="space-y-6">
+
+<div class="bg-gray-50 p-7 rounded-3xl shadow">
+
+<h3 class="text-xl font-semibold mb-3">
+Do you help freshers get jobs?
+</h3>
+
+<p class="text-gray-600 leading-7">
+Yes, we specialize in helping fresh graduates secure opportunities.
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-7 rounded-3xl shadow">
+
+<h3 class="text-xl font-semibold mb-3">
+Do you provide interview preparation?
+</h3>
+
+<p class="text-gray-600 leading-7">
+Yes, we conduct mock interviews and communication training.
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-7 rounded-3xl shadow">
+
+<h3 class="text-xl font-semibold mb-3">
+Do you create professional resumes?
+</h3>
+
+<p class="text-gray-600 leading-7">
+Absolutely. We help candidates create ATS-friendly resumes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24 bg-gray-50">
+
+<div class="max-w-5xl mx-auto px-6">
+
+<div class="text-center mb-14">
+
+<h2 class="text-4xl font-bold mb-4">
+Contact Us
+</h2>
+
+<p class="text-gray-600">
+Get in touch for career guidance and job opportunities
+</p>
+
+</div>
+
+<form action="https://formsubmit.co/subhadraconsultancy.services@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_template" value="table">
+
+<input type="hidden" name="_subject" value="New Business Enquiry">
+
+<input type="text" name="company" placeholder="Company Name" required>
+
+<input type="email" name="email" placeholder="Work Email" required>
+
+<input type="text" name="mobile" placeholder="Mobile Number" required>
+
+<select name="requirement" required>
+<option value="">Select Requirement</option>
+<option>Permanent Hiring</option>
+<option>Contract Staffing</option>
+<option>Bulk Hiring</option>
+<option>Executive Search</option>
+</select>
+
+<textarea name="message" placeholder="Tell us about your hiring requirement" required></textarea>
+
+<button type="submit">
+Submit Enquiry
+</button>
+
+</form>
+
+<div class="flex flex-wrap justify-center gap-5 mt-10">
+
+<a href="mailto:subhadraconsultancy.services@gmail.com"
+class="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:scale-105 shadow">
+
+Email Us
+
+</a>
+
+<a href="https://wa.me/917028374676"
+target="_blank"
+class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 shadow">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STICKY CTA -->
+
+<div class="fixed bottom-0 left-0 w-full bg-blue-700 text-white py-4 px-6 z-40 shadow-2xl">
+
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+
+<p class="font-medium">
+Looking for fresher opportunities? Start your career journey today.
+</p>
+
+<a href="#contact"
+class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold">
+
+Apply Now
+
+</a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-950 text-gray-300 py-16">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="grid md:grid-cols-4 gap-12">
+
+<div>
+
+<h3 class="text-3xl font-bold text-white mb-5">
+Subhadra Consultancy
+</h3>
+
+<p class="leading-8 text-gray-400">
+Helping freshers and professionals build successful careers through guidance and placement support.
+</p>
+
+<p class="mt-5">Pune, Maharashtra</p>
+
+<p class="mt-2">
+subhadraconsultancy.services@gmail.com
+</p>
+
+<p class="mt-2">
++91 7028374676
+</p>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-semibold mb-5 text-lg">
+Quick Links
+</h4>
+
+<ul class="space-y-3">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-semibold mb-5 text-lg">
+Services
+</h4>
+
+<ul class="space-y-3">
+
+<li>Resume Building</li>
+<li>Interview Coaching</li>
+<li>Career Counseling</li>
+<li>Job Assistance</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-semibold mb-5 text-lg">
+Follow Us
+</h4>
+
+<div class="flex gap-5">
+
+<a href="https://www.linkedin.com" target="_blank">
+<i data-feather="linkedin"></i>
+</a>
+
+<a href="https://www.instagram.com" target="_blank">
+<i data-feather="instagram"></i>
+</a>
+
+<a href="https://wa.me/917028374676" target="_blank">
+<i data-feather="message-circle"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+
+© 2026 Subhadra Consultancy Services. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+
+<a href="https://wa.me/917028374676"
+target="_blank"
+class="fixed bottom-24 left-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110">
+
+<i data-feather="message-circle"></i>
+
+</a>
+
+<!-- SCROLL TOP -->
+
+<button id="scrollBtn" class="scroll-top">
+
+<i data-feather="arrow-up"></i>
+
+</button>
+
+<!-- SCRIPT -->
 
 <script>
 
-const form = document.getElementById("contactForm");
+/* ICONS */
 
-const popup = document.getElementById("successPopup");
+feather.replace();
 
-form.addEventListener("submit", function(){
+/* MOBILE MENU */
 
-  popup.classList.add("active");
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
 
-  setTimeout(() => {
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
 
-    form.submit();
+/* SCROLL BUTTON */
 
-  }, 1500);
+const scrollBtn = document.getElementById('scrollBtn');
+
+window.addEventListener('scroll', () => {
+
+if(window.scrollY > 300){
+scrollBtn.style.display = 'flex';
+}else{
+scrollBtn.style.display = 'none';
+}
 
 });
 
-function closePopup(){
+/* SCROLL TOP */
 
-  popup.classList.remove("active");
+scrollBtn.addEventListener('click', () => {
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+});
+
+/* SMOOTH SCROLL */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.addEventListener('click', function (e) {
+
+e.preventDefault();
+
+const target = document.querySelector(this.getAttribute('href'));
+
+if(target){
+
+window.scrollTo({
+top:target.offsetTop - 70,
+behavior:'smooth'
+});
 
 }
+
+mobileMenu.classList.add('hidden');
+
+});
+
+});
+
+/* FORM SUCCESS */
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", () => {
+
+alert("Thank you! Your message has been sent successfully.");
+
+});
 
 </script>
-<!-- =========================================
-     CSS
-========================================= -->
 
-<style>
-
-/* =========================================
-   CONTACT SECTION
-========================================= */
-
-.contact-section{
-  padding:100px 0;
-  background:#f8fafc;
-}
-
-/* =========================================
-   FORM WRAPPER
-========================================= */
-
-.contact-form-wrapper{
-  max-width:900px;
-  margin:auto;
-  background:#ffffff;
-  padding:50px;
-  border-radius:32px;
-  border:1px solid #e2e8f0;
-  box-shadow:0 20px 50px rgba(0,0,0,0.06);
-}
-
-/* =========================================
-   FORM
-========================================= */
-
-.contact-form{
-  display:flex;
-  flex-direction:column;
-  gap:24px;
-}
-
-/* =========================================
-   ROW
-========================================= */
-
-.form-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
-}
-
-/* =========================================
-   GROUP
-========================================= */
-
-.form-group{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-/* =========================================
-   LABEL
-========================================= */
-
-.form-group label{
-  font-size:14px;
-  font-weight:600;
-  color:#0f172a;
-}
-
-/* =========================================
-   INPUTS
-========================================= */
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-  width:100%;
-  padding:16px 18px;
-  border:2px solid #e2e8f0;
-  border-radius:16px;
-  background:#ffffff;
-  font-size:15px;
-  font-family:inherit;
-  transition:all .3s ease;
-}
-
-/* =========================================
-   FOCUS
-========================================= */
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-  outline:none;
-  border-color:#2563eb;
-  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
-}
-
-/* =========================================
-   TEXTAREA
-========================================= */
-
-.form-group textarea{
-  min-height:150px;
-  resize:vertical;
-}
-
-/* =========================================
-   BUTTON
-========================================= */
-
-.submit-btn{
-  height:62px;
-  border:none;
-  border-radius:18px;
-  background:linear-gradient(135deg,#1e3a8a,#06b6d4);
-  color:#ffffff;
-  font-size:16px;
-  font-weight:700;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  transition:all .3s ease;
-  box-shadow:0 15px 35px rgba(37,99,235,0.25);
-}
-
-.submit-btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 20px 45px rgba(37,99,235,0.35);
-}
-
-/* =========================================
-   MOBILE RESPONSIVE
-========================================= */
-
-@media(max-width:768px){
-
-  .contact-section{
-    padding:70px 20px;
-  }
-
-  .contact-form-wrapper{
-    padding:32px;
-  }
-
-  .form-row{
-    grid-template-columns:1fr;
-  }
-
-}
-
-</style>
-
-<!-- =========================================
-     IMPORTANT
-========================================= -->
-
-<!--
-
-1. Go to:
-   https://web3forms.com
-
-2. Create FREE account
-
-3. Copy Access Key
-
-4. Replace:
-   YOUR_ACCESS_KEY_HERE
-
-5. Deploy on:
-   - Netlify
-   - Vercel
-   - GitHub Pages
-
-6. Done ✅
-
--->
-
-
-<!-- =========================================
-     CSS
-========================================= -->
-
-<style>
-
-.contact-form{
-  display:flex;
-  flex-direction:column;
-  gap:22px;
-}
-
-.form-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.form-group{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.form-group label{
-  font-size:14px;
-  font-weight:600;
-  color:#0f172a;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-  width:100%;
-  padding:16px 18px;
-  border:2px solid #e2e8f0;
-  border-radius:16px;
-  font-size:15px;
-  font-family:inherit;
-  background:#ffffff;
-  transition:all .3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-  outline:none;
-  border-color:#2563eb;
-  box-shadow:0 0 0 4px rgba(37,99,235,0.08);
-}
-
-.form-group textarea{
-  min-height:140px;
-  resize:vertical;
-}
-
-.submit-btn{
-  height:58px;
-  border:none;
-  border-radius:18px;
-  background:linear-gradient(135deg,#1e3a8a,#06b6d4);
-  color:#ffffff;
-  font-size:16px;
-  font-weight:700;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  transition:all .3s ease;
-  box-shadow:0 12px 28px rgba(37,99,235,0.2);
-}
-
-.submit-btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 18px 35px rgba(37,99,235,0.28);
-}
-
-@media(max-width:768px){
-
-  .form-row{
-    grid-template-columns:1fr;
-  }
-
-}
-
-</style>
-
-
-        </div>
-      </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>Subhadra Consultancy</h3>
-          <p>Strategic workforce solutions for modern enterprises. We help organizations build high-performing teams through intelligent recruitment and staffing services.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        
-        <div class="footer-links">
-          <h4>Solutions</h4>
-          <ul>
-            <li><a href="#solutions">Permanent Staffing</a></li>
-            <li><a href="#solutions">Contract Staffing</a></li>
-            <li><a href="#solutions">Bulk Hiring</a></li>
-            <li><a href="#solutions">Executive Search</a></li>
-            <li><a href="#solutions">IT Recruitment</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-links">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#industries">Industries</a></li>
-            <li><a href="#process">Our Process</a></li>
-            <li><a href="Job-Aspirants.html">Job Seekers</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-links">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+917030604676">+91 7030604676</a></li>
-            <li><a href="mailto:subhadraconsultancy.services@gmail.com">subhadraconsultancy.services@gmail.com</a></li>
-            <li><a href="https://subhadraconsultancy.in">subhadraconsultancy.in</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>© 2025 Subhadra Consultancy Services. All rights reserved.</p>
-        <div class="footer-badges">
-          <img src="[img.shields.io](https://img.shields.io/badge/Made_in-India-ff9933?style=flat-square&logo=india&logoColor=white)" alt="Made in India">
-          <img src="[img.shields.io](https://img.shields.io/badge/Trusted_by-50+_Companies-1e3a8a?style=flat-square)" alt="Trusted">
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WHATSAPP BUTTON -->
-  <a href="[wa.me](https://wa.me/917030604676)" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- SCROLL TO TOP -->
-  <a href="#" class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </a>
-
-  <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // Mobile navigation toggle
-    function toggleMobileNav() {
-      const mobileNav = document.getElementById('mobileNav');
-      mobileNav.classList.toggle('active');
-    }
-
-    // Scroll to top button
-    const scrollTop = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 500) {
-        scrollTop.classList.add('visible');
-      } else {
-        scrollTop.classList.remove('visible');
-      }
-    });
-
-    // Animated counters
-    const counters = document.querySelectorAll('.stat-number');
-    const observerOptions = {
-      threshold: 0.5,
-      rootMargin: '0px'
-    };
-
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-          const target = parseInt(counter.getAttribute('data-target'));
-          const duration = 2000;
-          const step = target / (duration / 16);
-          let current = 0;
-
-          const updateCounter = () => {
-            current += step;
-            if (current < target) {
-              counter.textContent = Math.floor(current) + '+';
-              requestAnimationFrame(updateCounter);
-            } else {
-              counter.textContent = target + '+';
-            }
-          };
-
-          updateCounter();
-          counterObserver.unobserve(counter);
-        }
-      });
-    }, observerOptions);
-
-    counters.forEach(counter => counterObserver.observe(counter));
-
-    // Smooth reveal animations
-    const revealElements = document.querySelectorAll('.solution-card, .industry-card, .why-feature, .process-step');
-    
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }, index * 100);
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    revealElements.forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'all 0.6s ease-out';
-      revealObserver.observe(el);
-    });
-  </script>
 </body>
 </html>
